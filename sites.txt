@@ -1,0 +1,17 @@
+sites :
+
+http://wpmidia.com.br/desenvolvimento-web/11-regras-css-todo-desenvolvedor-web-deve-saber/
+
+http://tableless.github.io/iniciantes/manual/css/float-clear.html
+
+https://dribbble.com/lbebber
+
+https://tympanus.net/codrops/
+
+https://www.w3.org/Style/Examples/007/center.pt_BR.html
+
+menu horizontal:
+https://www.codigofonte.com.br/codigos/menu-horizontal-simples
+
+tutorial:
+https://www.youtube.com/watch?v=kU7b9olDWns&list=PLeYWlwmXQnJ0Vhs035A4vP8ErCzD5_aR-&index=25
