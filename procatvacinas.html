@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title> PROCATVACINAS </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/procatEventsUtils.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+	<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+
+</head>
+
+	<script>
+		$(function(){
+			$(window).scroll(function () {
+				var logoAltura = $('.logo').css('height')
+				var logoAlturaSemPX = logoAltura.substring(0, logoAltura.length-2)/2
+
+				setMenuFixed($('.headMenu'), $(this).scrollTop(), logoAlturaSemPX);
+				reduceMenuImg($('#menuImg'), $(this).scrollTop(), logoAlturaSemPX);
+				changeMenu($('#menuHeader'), $('#burgerMenu'), $(this).scrollTop(), logoAlturaSemPX)
+			});
+
+			sideMenuButtons($("#menu-toggle"), $("#wrapper"))
+		});
+	</script>
+
+	<script>
+		//(function(){
+		  // setup your carousels as you normally would using JS
+		  // or via data attributes according to the documentation
+		  // https://getbootstrap.com/javascript/#carousel
+		  //$('#carousel123').carousel({ interval: 2000 });
+		  //$('#carouselABC').carousel({ interval: 3600 });
+		//}());
+
+		(function(){
+		  $('.carousel-showmanymoveone .item').each(function(){
+		    var itemToClone = $(this);
+
+		    for (var i=1;i<4;i++) {
+		      itemToClone = itemToClone.next();
+
+		      // wrap around if at end of item collection
+		      if (!itemToClone.length) {
+		        itemToClone = $(this).siblings(':first');
+		      }
+
+		      // grab item, clone, add marker class, add to collection
+		      itemToClone.children(':first-child').clone()
+		        .addClass("cloneditem-"+(i))
+		        .appendTo($(this));
+		    }
+		  });
+		}());
+
+	</script>
+
+	<body>
+		<div class="container">
+			<header>
+				<div class="headMenu">
+					<div id="menuImg">
+						<a href="#" title="PROCATVACINAS"> 
+							<img class="logo" src="img/logo.png"> 
+						</a>
+					</div>
+						
+					<nav id="menuHeader">
+						<ul>
+							<li>
+								<a href="#" title="campanhas corporativas">campanhas corporativas</a> 
+							</li>
+							<li>
+								<a href="#" title="clínicas">clínicas</a>
+							</li>
+							<li>
+								<a href="#" title="homecare">homecare</a>
+							</li>
+							<li>
+								<a href="#"" title="vacinas">vacinas</a>
+							</li>
+							<li>
+								<a href="#" title="contato">contato</a>
+							</li>
+						</ul>
+					</nav>
+
+					<ul id="burgerMenu" class="nav nav-pills">
+	                    <li role="presentation" id="compMenu">
+	                        <a href="#menu-toggle" id="menu-toggle">
+	                            <span class="glyphicon glyphicon-menu-hamburger" ></span>
+	                        </a>
+	                    </li>
+	                    <li>
+	                    	<a href="#" title="homecare">menu</a>
+	                    </li>
+	                </ul>
+
+					<div id="wrapper">
+		                <div id="sidebar-wrapper">
+		                    <ul class="sidebar-nav">
+		                        <li class="sidebar-brand">
+		                            <a href="index">
+		                                procatvacinas
+		                            </a>
+		                        </li>
+		                        <li>
+		                            <a href="sobre">campanhas corporativas</a>
+		                            <hr/>
+		                        </li>
+		                        
+		                        <li>
+		                            <a href="quemusaaprova">clínicas</a>
+		                            <hr/>
+		                        </li>
+		                        <li>
+		                            <a href="farmaciasparceiras">homecare</a>
+		                            <hr/>
+		                        </li>
+		                        <li>
+		                            <a href="sejaumparceiro">vacinas</a>
+		                            <hr/>
+		                        </li>
+		                        <li>
+		                            <a href="faleconosco">contato</a>
+		                        </li>
+		                    </ul>
+		                </div>
+	            	</div>
+            	</div>
+			</header>
+
+			<figure>
+				<img class="img" src="img/vacina.jpg"/>
+			</figure> 
+		
+			<section class="campanhas">
+				<header id="campanhas-corporativas">
+					<hgroup>
+						<h1>campanhas</h1>
+					</hgroup>
+				</header>
+
+				<article class="blocos">
+					<ul>
+						<li class="bloco1">
+						<h2>o que é?</h2>	
+							<p>Na campanha de vacinação corporativa, faz-se o atendimento in loco dos colaboradores que desejam tomar a vacina. 
+							A PROCAT Vacinas desloca uma equipe de enfermagem e todos os materiais necessários para a realização da campanha, evitando que haja a necessidade de deslocamento para fora da empresa.
+							Temos todas as licenças e certificados para a realização desse tipo de serviço, garantindo qualidade e segurança.
+							</p>
+						</li>
+
+						<li class="bloco2">
+						<h2>benefícios</h2>	
+							<p>Algumas vantagens da campanha de vacinação corporativa são a redução do absenteísmo; o combate ao presenteísmo; a diminuição na frequência de visitas médicas, favorecendo a negociação com as operadoras dos planos de saúde corporativos e, não menos importante, oferecer aos funcionários e seus dependentes um benefício tangível no que se refere a promoção da saúde do trabalhador.
+							</p>
+						</li>
+
+						<li class="bloco3">
+						<h2>vacinas</h2>		
+							<p>Trabalhamos com todo o portfólio de vacinas liberadas pela ANVISA, de todos os laboratórios.
+							A campanha contra a gripe é de abrangência nacional, com o início sujeito à chegada da vacina.
+							As demais campanhas compreendem HPV, hepatite, febre amarela, entre outras vacinas, dependendo exclusivamente da disponibilidade da mesma no mercado.
+							</p>
+						</li>
+					</ul>
+				</article>
+
+				<div class="bt-orcamento">
+				</div>
+			</section>
+
+
+
+
+
+			<div class="row">
+				<h1>clientes</h1>
+
+			    <div class="col-md-12">
+			      <div class="carousel carousel-showmanymoveone slide" id="carousel123">
+			        <div class="carousel-inner">
+			          <div class="item active">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/nestle.png" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/mercedes.png" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/safra.png" class="img-responsive"></a></div>
+			          </div>          
+			          <div class="item">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/alpha.png" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/cpfl.png" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/caixa.png" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/gpa.png" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/raiadrog.png" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/pwc.png" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/mapfre.png" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/ford.png" class="img-responsive"></a></div>
+			          </div>
+			          <div class="item">
+			            <div class="col-xs-12 col-sm-6 col-md-3"><a href="#"><img src="img/gm.png" class="img-responsive"></a></div>
+			          </div>
+			        </div>
+			        <!--a class="left carousel-control" href="#carousel123" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+			        <a class="right carousel-control" href="#carousel123" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a-->
+			      </div>
+			    </div>
+		  </div>
+
+			<!--div class="clientes">
+					<ul>
+						<li>Nestlé</li>
+						<li>Banco Safra</li>
+						<li>Grupo Alpha</li>
+						<li>CPFL</li>
+						<li>Caixa</li>
+						<li>GPA</li>
+						<li>Raia / Drogasil</li>
+						<li>PwC</li>
+						<li>Mapfre</li>
+						<li>Ford</li>
+						<li>GM</li>
+						<li>Mercedes</li>
+					</ul>
+			</div-->
+
+			<div id="clínicas">
+				<hgroup>
+					<h1>clínicas</h1>
+					<h2>Atendimento presencial em uma das nossas salas de imunização.
+					</h2>
+				</hgroup>
+			</div>
+
+			<div id="homecare">
+				<h1>homecare</h1>
+					<p>Contamos com o atendimento personalizado, à domicílio. Temos condições especiais para vacinação de diversas famílias em um mesmo endereço (como diversos apartamentos em um mesmo condomínio, no mesmo dia e horário).
+					</p>
+
+				<div class="formulario">
+				</div>
+			</div>
+
+			<div id="vacinas">
+				<h1>vacinas</h1>
+			</div>
+
+			<div id="história">
+				<h1>história</h1>
+					<p>A PROCAT Vacinas começou como uma empresa de medicina ocupacional. Após alguns anos de operação, acabou deixando o ramo e passou a atuar como o braço corporativo para serviços de imunização da empresa Pró Imune – clínica número 1 em vacinação no ABC paulista. Com o crescimento das atividades da PROCAT, a mesma se separou e começou a atuar por conta própria.
+					No total, são 23 anos de mercado no ramo de vacinação humana. Nossas campanhas e clínicas já atingiram mais de 4 milhões de vidas em todo o Brasil.
+					</p>
+			</div>
+
+			<aside>
+				<div id="contato">
+				</div>
+			</aside>
+
+			<footer>
+				<p>copyright 2018 Ideas Tree</p>
+			</footer>
+		</div>
+	</body>
+</html>
