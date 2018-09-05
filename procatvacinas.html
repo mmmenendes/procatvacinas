@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style-menu.css">
+		<title> PROCATVACINAS </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/procatEventsUtils.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	</head>
+
+	<script>
+		$(function(){
+			$(window).scroll(function () {
+				var logoAltura = $('.logo').css('height')
+				var logoAlturaSemPX = logoAltura.substring(0, logoAltura.length-2)/2
+
+				setMenuFixed($('.headMenu'), $(this).scrollTop(), logoAlturaSemPX);
+				reduceMenuImg($('#menuImg'), $(this).scrollTop(), logoAlturaSemPX);
+				changeMenu($('#menuHeader'), $('#burgerMenu'), $(this).scrollTop(), logoAlturaSemPX)
+			});
+
+			sideMenuButtons($("#menu-toggle"), $("#wrapper"))
+		});
+	</script>
+
+	<body>
+		<header>
+			<div class="headMenu">
+				<div class="container">
+					<div id="menuImg">
+						<a href="#" title="PROCATVACINAS"> 
+							<img class="logo" class="img-responsive" src="img/logo.png"> 
+						</a>
+					</div>
+
+					<nav id="menuHeader" class="container-fluid">
+						<ul>
+							<li>
+								<a href="#campanhas-corporativas" title="campanhas corporativas">campanhas corporativas</a> 
+							</li>
+							<li>
+								<a href="#clinicas" title="clínicas">clínicas</a>
+							</li>
+							<li>
+								<a href="#homecare" title="homecare">homecare</a>
+							</li>
+							<li>
+								<a href="#vacinas" title="vacinas">vacinas</a>
+							</li>
+							<li>
+								<a href="#contato" title="contato">contato</a>
+							</li>
+						</ul>
+					</nav>
+
+					<ul id="burgerMenu" class="nav nav-pills">
+						<li role="presentation">
+							<a href="#menu-toggle" id="menu-toggle">
+								<span class="glyphicon glyphicon-menu-hamburger" ></span>
+							</a>
+						</li>
+						<li>
+							<a href="#" title="homecare">menu</a>
+						</li>
+					</ul>
+
+					<div id="wrapper">
+						<div id="sidebar-wrapper">
+							<ul class="sidebar-nav">
+								<li class="sidebar-brand">
+									<a href="index">procatvacinas</a>
+								</li>
+								<li>
+									<a href="#campanhas-corporativas">campanhas corporativas</a>
+									<hr/>
+								</li>
+
+								<li>
+									<a href="#clinicas">clínicas</a>
+									<hr/>
+								</li>
+								<li>
+									<a href="#homecare">homecare</a>
+									<hr/>
+								</li>
+								<li>
+									<a href="#vacinas">vacinas</a>
+									<hr/>
+								</li>
+								<li>
+									<a href="#contato">contato</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<figure>
+			<img class="img" src="img/vacina.jpg"/>
+		</figure>
+
+		<div class="container">
+			<section class="campanhas">
+				<div id="campanha">
+					<div class="campanha">
+						<div class="h1-left">
+							<h1>campanhas</h1>
+						</div>
+						<div class="img-right">
+							<img src="img/icon/agulha.png">
+						</div>
+						<hr style="height:1px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+					</div>
+				</div>
+
+				<div class="blocos">
+					<div class="row">
+						<div class="col-sm" >
+							<h2>o que é?</h2>	
+							<p id="oque">Na campanha de vacinação corporativa, faz-se o atendimento in loco dos colaboradores que desejam tomar a vacina. 
+								A PROCAT Vacinas desloca uma equipe de enfermagem e todos os materiais necessários para a realização da campanha, evitando que haja a necessidade de deslocamento para fora da empresa.
+								Temos todas as licenças e certificados para a realização desse tipo de serviço, garantindo qualidade e segurança.
+							</p>
+						</div>
+
+						<div class="col-sm" >
+							<h2>benefícios</h2>	
+							<p id="beneficios" >Algumas vantagens da campanha de vacinação corporativa são a redução do absenteísmo; o combate ao presenteísmo; a diminuição na frequência de visitas médicas, favorecendo a negociação com as operadoras dos planos de saúde corporativos e, não menos importante, oferecer aos funcionários e seus dependentes um benefício tangível no que se refere a promoção da saúde do trabalhador.
+							</p>
+						</div>
+
+						<div class="col-sm" data-toggle="collapse" data-target="#vacinas1">
+							<h2>vacinas</h2>		
+							<p id="vacinas1" class="collapse">Trabalhamos com todo o portfólio de vacinas liberadas pela ANVISA, de todos os laboratórios.
+								A campanha contra a gripe é de abrangência nacional, com o início sujeito à chegada da vacina.
+								As demais campanhas compreendem HPV, hepatite, febre amarela, entre outras vacinas, dependendo exclusivamente da disponibilidade da mesma no mercado.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header text-center">
+								<h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body mx-3">
+								<div class="md-form mb-5">
+									<i class="fa fa-user prefix grey-text"></i>
+									<input type="text" id="form34" class="form-control validate">
+									<label data-error="wrong" data-success="right" for="form34">Nome</label>
+								</div>
+
+								<div class="md-form mb-5">
+									<i class="fa fa-envelope prefix grey-text"></i>
+									<input type="email" id="form29" class="form-control validate">
+									<label data-error="wrong" data-success="right" for="form29">E-mail</label>
+								</div>
+
+								<div class="md-form mb-5">
+									<i class="fa fa-tag prefix grey-text"></i>
+									<input type="text" id="form32" class="form-control validate">
+									<label data-error="wrong" data-success="right" for="form32">Telefone</label>
+								</div>
+
+								<div class="md-form">
+									<i class="fa fa-pencil prefix grey-text"></i>
+									<textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+									<label data-error="wrong" data-success="right" for="form8">empresa</label>
+								</div>
+
+								<div class="md-form">
+									<i class="fa fa-pencil prefix grey-text"></i>
+									<textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+									<label data-error="wrong" data-success="right" for="form8">endereço</label>
+								</div>
+
+								<div class="md-form">
+									<i class="fa fa-pencil prefix grey-text"></i>
+									<textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+									<label data-error="wrong" data-success="right" for="form8">quantidade de colaboradores</label>
+								</div>
+
+								<div class="md-form">
+									<i class="fa fa-pencil prefix grey-text"></i>
+									<textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+									<label data-error="wrong" data-success="right" for="form8">vacina</label>
+								</div>
+							</div>
+
+							<div class="modal-footer d-flex justify-content-center">
+								<button class="btn btn-unique">Enviar<i class="fa fa-paper-plane-o ml-1"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-center">
+					<a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Solicitar cotação</a>
+				</div>
+			</section>
+
+			<div id="cliente">
+				<div class="cliente">
+					<div class="h1-left">
+						<h1>clientes</h1>
+					</div>
+					<div class="img-right">
+						<img src="img/icon/client.png">
+					</div>
+					<hr style="height:1px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+				</div>
+
+				<div class="row client" align="center">
+					<div class="clientesSlides">
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/nestle.png" class="img-responsive"></div>
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/mercedes.png" class="img-responsive"></div>
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/safra.png" class="img-responsive"></div>
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/alpha.png" class="img-responsive"></div>
+					</div>
+					<div class="clientesSlides">
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/cpfl.png" class="img-responsive"></div>
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/caixa.png" class="img-responsive"></div>
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/gpa.png" class="img-responsive"></div>
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/raiadrog.png" class="img-responsive"></div>
+					</div>
+					<div class="clientesSlides">
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/pwc.png" class="img-responsive"></div>
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/mapfre.png" class="img-responsive"></div>
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/ford.png" class="img-responsive"></div>
+						<div class="col-xs-12 col-sm-6 col-md-3"><img src="img/gm.png" class="img-responsive"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="clinicas" class="clinicas">
+			<div class="h1-left">
+				<h1>clínicas</h1>
+			</div>
+
+			<div class="img-right">
+				<img src="img/icon/location1.png">
+			</div>
+			<br>
+			<h2>Atendimento presencial em uma das nossas salas de imunização.
+			</h2>
+			<br>
+			<br>
+			<div class="clinica" id="clinicaA" align="center">
+				<div id='gmap_canvasA'></div>
+			</div>
+			<div class="clinica" id="clinicaB">
+				<div id='gmap_canvasB'></div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div id="homecare">
+				<br>
+				<br>
+				<h1>homecare</h1>
+				<br>
+				<hr style="height:2px; border:none; color:#FFF; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+				<br>
+
+				<div>
+					<img class="home col-sm" src="img/icon/homecare.png">
+
+					<p class="col-sm">Contamos com o atendimento personalizado, à domicílio. Temos condições especiais para vacinação de diversas famílias em um mesmo endereço (como diversos apartamentos em um mesmo condomínio, no mesmo dia e horário).
+					</p>
+				</div>
+
+				<div class="formulario">
+					<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog" role="document">
+					        <div class="modal-content">
+					            <div class="modal-header text-center">
+					                <h4 class="modal-title w-100 font-weight-bold">Formulário</h4>
+					                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					                    <span aria-hidden="true">&times;</span>
+					                </button>
+					            </div>
+					            
+					            <div class="modal-body mx-3">
+					                <div class="md-form mb-5">
+					                    <i class="fa fa-user prefix grey-text"></i>
+					                    <input type="text" id="form34" class="form-control validate">
+					                    <label data-error="wrong" data-success="right" for="form34">Your name</label>
+					                </div>
+
+					                <div class="md-form mb-5">
+					                    <i class="fa fa-envelope prefix grey-text"></i>
+					                    <input type="email" id="form29" class="form-control validate">
+					                    <label data-error="wrong" data-success="right" for="form29">Your email</label>
+					                </div>
+
+					                <div class="md-form mb-5">
+					                    <i class="fa fa-tag prefix grey-text"></i>
+					                    <input type="text" id="form32" class="form-control validate">
+					                    <label data-error="wrong" data-success="right" for="form32">Subject</label>
+					                </div>
+
+					                <div class="md-form">
+					                    <i class="fa fa-pencil prefix grey-text"></i>
+					                    <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+					                    <label data-error="wrong" data-success="right" for="form8">Your message</label>
+					                </div>
+						        </div>
+						        <div class="modal-footer d-flex justify-content-center">
+					                <button class="btn btn-unique">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+					            </div>
+						    </div>
+						</div>
+					</div>
+
+					<div class="text-center">
+					    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Preencha o formulário</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="vacinas">
+				<br>
+				<br>
+				<h1>vacinas</h1>
+				<br>
+				<hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+				<br>
+
+				<table class="table table-striped">
+				  <thead>
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">Vacina</th>
+				      <th scope="col">Descrição da doença</th>
+				      <th scope="col">Indicação</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td>Influenza(gripe)</td>
+				      <td>Infecção do sistema respiratório que pode evoluir para pneumonia.</td>
+				      <td>à partir de 6 meses</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td>HPV</td>
+				      <td>Doença sexualmente transmissível e responsável por alguns tipos de cânceres</td>
+				      <td>à partir de 9 anos</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td>Hepatite A</td>
+				      <td>Infecção aguda do figado que pode evoluir de forma fulminante e fatal;</td>
+				      <td>à partir de 1 ano de vida.</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">4</th>
+				      <td>Hepatite B</td>
+				      <td>Infecção crônica do fígado, sendo a principal causa de câncer hepático.</td>
+				      <td>ao nascer e gestantes.</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">5</th>
+				      <td>DTPa</td>
+				      <td>Tríplice bacteriana, protege a contra difteria, o tétano e a coqueluche.</td>
+				      <td>à partir de 5 anos e gestantes.</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">6</th>
+				      <td>Vericela</td>
+				      <td>A varicela (catapora) é uma doença infecciosa, altamente contagiosa.</td>
+				      <td>à partir de 1 ano de vida.</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">7</th>
+				      <td>Febre Amarela</td>
+				      <td>Doença infecciosa febril aguda, transmitida pelo mosquito Aedes aegypti.</td>
+				      <td>à partir de 9 meses.</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">8</th>
+				      <td>Meningócica ACWY</td>
+				      <td>Infecção bacteriana aguda, potencialmente letal, nas membranas do sistema nervoso central levando à meningite e/ou infecção generalizada.</td>
+				      <td>à partir de 2 meses.</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">9</th>
+				      <td>HerpesZoster</td>
+				      <td>Conhecida como "cobreiro", é uma doença infecciosa causada pelo mesmo vírus da catapora, provocando lesões causadoras de fortes dores no corpo.</td>
+				      <td>à partir de 50 anos.</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">10</th>
+				      <td>Hepatite A</td>
+				      <td>Infecção aguda do figado que pode evoluir de forma fulminante e fatal;</td>
+				      <td>à partir de 1 ano de vida.</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">11</th>
+				      <td>Pneumocócicas</td>
+				      <td>Bactéria que causa várias doenças como otite e sinusite, e outras mais graves como a pneumonia, a meningite e a septicemia.</td>
+				      <td>à partir de 2 meses.</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">12</th>
+				      <td>Tróplice viral</td>
+				      <td>Proteção contra o Sarampo, a Caxumba e a Rubéola.</td>
+				      <td>à partir de 1 ano.</td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+
+			<div class="historia">
+				<br>
+				<br>
+				<h1>história</h1>
+				<br>
+				<hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+				<br>
+				<div class="">
+					<img class="hist col-sm" src="img/icon/historia.png">
+					
+					<p class="col-sm">A PROCAT Vacinas começou como uma empresa de medicina ocupacional. Após alguns anos de operação, acabou deixando o ramo e passou a atuar como o braço corporativo para serviços de imunização da empresa Pró Imune – clínica número 1 em vacinação no ABC paulista. Com o crescimento das atividades da PROCAT, a mesma se separou e começou a atuar por conta própria.
+						No total, são 23 anos de mercado no ramo de vacinação humana. Nossas campanhas e clínicas já atingiram mais de 4 milhões de vidas em todo o Brasil.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<footer id="contato">
+			<address class="container">
+				<strong>ProcatVacinas</strong><br>
+				Rua Maurílio Vieira Ormonde, 101<br>
+				São Bernardo do Campo - SP<br>
+				Tel: (11) 2669-4062<br>
+			</address>
+
+			<address class="container">
+				E-mail: contato@procatvacinas.com.br
+			</address>
+
+			<p class="container">copyright 2018 Ideas Tree</p>
+		</footer>
+	</body>
+
+	<script>
+		carouselClients("clientesSlides", 4);
+
+		$(function(){
+			$("#clinicaA").mouseover(function() {
+				$(this).css("background-image", "none");
+				$(this).css("background-color", "grey");
+				$("#gmap_canvasA").css("display", "inherit");
+			})
+
+			$("#clinicaA").mouseout(function() {
+				$(this).css("background-image", "url(img/hands.jpg)");
+				$("#gmap_canvasA").css("display", "none");
+			})
+
+			$("#clinicaB").mouseover(function() {
+				$(this).css("background-image", "none");
+				$(this).css("background-color", "grey");
+				$("#gmap_canvasB").css("display", "inherit");
+			})
+
+			$("#clinicaB").mouseout(function() {
+				$(this).css("background-image", "url(img/hands.jpg)");
+				$("#gmap_canvasB").css("display", "none");
+			})
+		});
+
+		google.maps.event.addDomListener(window, 'load', init_map('gmap_canvasA', -23.5475414, -46.68765350000001, '<strong>clínica médica croce</strong><br>rua heitor penteado 447<br>'));
+		google.maps.event.addDomListener(window, 'load', init_map('gmap_canvasB', -23.5664473, -46.74371159999998, '<strong>centro de vacinação policlinica bonfiglioli</strong><br>av corifeu de azevedo marques, 2697<br>'));
+	</script>
+</html>
+

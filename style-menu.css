@@ -1,0 +1,145 @@
+.headMenu{
+	background: white;
+  z-index: 1;
+  width : 100%;
+}
+
+#menuImg{
+	width: 10%;
+    height: 10%;
+    float: left;
+    background: white;
+}
+
+#menuHeader{
+	display: inherit;
+	position: relative;
+    height: 50px;
+    padding-top: 2%;
+}
+
+#menuHeader ul {
+    /*width: 960px;*/
+    margin: 0 auto;
+    list-style: none;
+}
+
+#menuHeader li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    /*width: 90px;*/
+    margin: 14px;
+}
+
+#menuHeader ul li{
+	float: left;
+}
+
+#menuHeader ul li a{
+	text-decoration: none;
+}
+
+#burgerMenu{
+	display: none;
+}
+
+#burgerMenu li{
+	float: right;
+}
+
+.glyphicon{
+    color: #225264;
+    font-size: large;
+}
+
+#wrapper {
+    display: none;
+    padding-top: 0px;
+    padding-right: 250px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-right: 0px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 250px;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 0px;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    align-content: center;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    color: #225264;
+}
+
+.sidebar-nav li hr {
+    width: 70%;
+    height:1px;
+    opacity: 0.8;
+    border:none; 
+    color:#6d6e71; 
+    background-color:#6d6e71; 
+    margin: 0px 0px 0px 15px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #225264;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
