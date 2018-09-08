@@ -14,6 +14,13 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+		<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+
 	</head>
 
 	<script>
@@ -111,7 +118,7 @@
 
 		<div class="container">
 			<section class="campanhas">
-				<div id="campanha">
+				<div id="campanhas-corporativas">
 					<div class="campanha">
 						<div class="h1-left">
 							<h1>campanhas</h1>
@@ -120,11 +127,13 @@
 							<img src="img/icon/agulha.png">
 						</div>
 						<hr style="height:1px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+						<br>
+						<br>
 					</div>
 				</div>
 
 				<div class="blocos">
-					<div class="row">
+					<div class="row blocos3">
 						<div class="col-sm" >
 							<h2>o que é?</h2>	
 							<p id="oque">Na campanha de vacinação corporativa, faz-se o atendimento in loco dos colaboradores que desejam tomar a vacina. 
@@ -150,67 +159,62 @@
 				</div>
 
 				<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header text-center">
-								<h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
+					<div id="modal-dialog" class="modal-dialog" role="document">
+						<div id="modal-form" class="modal-content">
 							<div class="modal-body mx-3">
-								<div class="md-form mb-5">
+								<h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+
+								<div id="moda-nome" class="md-form">
 									<i class="fa fa-user prefix grey-text"></i>
-									<input type="text" id="form34" class="form-control validate">
-									<label data-error="wrong" data-success="right" for="form34">Nome</label>
+									<input type="text" id="form34" class="form-control validate" placeholder="Nome">
 								</div>
 
-								<div class="md-form mb-5">
+								<div id="moda-email" class="md-form">
 									<i class="fa fa-envelope prefix grey-text"></i>
-									<input type="email" id="form29" class="form-control validate">
-									<label data-error="wrong" data-success="right" for="form29">E-mail</label>
+									<input type="email" id="form29" class="form-control validate"  placeholder="E-mail">
 								</div>
 
-								<div class="md-form mb-5">
+								<div id="moda-endereco" class="md-form">
+									<i class="fa fa-pencil prefix grey-text"></i>
+									<input type="text" id="form32" class="form-control validate" placeholder="Endereço">
+								</div>
+
+								<div id="moda-telefone" class="md-form">
 									<i class="fa fa-tag prefix grey-text"></i>
-									<input type="text" id="form32" class="form-control validate">
-									<label data-error="wrong" data-success="right" for="form32">Telefone</label>
+									<input type="text" id="form32" class="form-control validate" placeholder="Telefone">									
+								</div>
+
+								<div id="moda-qtd" class="md-form">
+									<i class="fa fa-pencil prefix grey-text"></i>
+									<input type="text" id="form32" class="form-control validate" placeholder="Qtd. vacinas">
+								</div>
+
+								<div id="moda-empresa" class="md-form">
+									<i class="fa fa-pencil prefix grey-text"></i>
+									<input type="text" id="form32" class="form-control validate" placeholder="Empresa">
 								</div>
 
 								<div class="md-form">
 									<i class="fa fa-pencil prefix grey-text"></i>
-									<textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
-									<label data-error="wrong" data-success="right" for="form8">empresa</label>
+									<input type="text" id="form32" class="form-control validate" placeholder="Vacina">
 								</div>
 
-								<div class="md-form">
-									<i class="fa fa-pencil prefix grey-text"></i>
-									<textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
-									<label data-error="wrong" data-success="right" for="form8">endereço</label>
+								<div align="center">
+									<button id="button-form" class="btn btn-unique">Enviar<i class="fa fa-paper-plane-o ml-1"></i></button>
 								</div>
-
-								<div class="md-form">
-									<i class="fa fa-pencil prefix grey-text"></i>
-									<textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
-									<label data-error="wrong" data-success="right" for="form8">quantidade de colaboradores</label>
-								</div>
-
-								<div class="md-form">
-									<i class="fa fa-pencil prefix grey-text"></i>
-									<textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
-									<label data-error="wrong" data-success="right" for="form8">vacina</label>
-								</div>
-							</div>
-
-							<div class="modal-footer d-flex justify-content-center">
-								<button class="btn btn-unique">Enviar<i class="fa fa-paper-plane-o ml-1"></i></button>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="text-center">
-					<a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Solicitar cotação</a>
+				    <button 
+				    	type="button"
+				    	class="btn btn-primary btn-lg " 
+				    	id="button-form"
+				    	data-toggle="modal" 
+				    	data-target="#modalContactForm">solicitar cotação
+				    </button>
 				</div>
 			</section>
 
@@ -254,7 +258,7 @@
 			</div>
 
 			<div class="img-right">
-				<img src="img/icon/location1.png">
+				<img src="img/icon/location1.png" class="img-responsive">
 			</div>
 			<br>
 			<h2>Atendimento presencial em uma das nossas salas de imunização.
@@ -279,61 +283,76 @@
 				<br>
 
 				<div>
-					<img class="home col-sm" src="img/icon/homecare.png">
+					<div class="img-home">
+						<img class="home col-sm" src="img/icon/homecare.png">
+					</div>
+					<div class="home-txt">
+						<p class="col-sm">Contamos com o atendimento personalizado, à domicílio. Temos condições especiais para vacinação de diversas famílias em um mesmo endereço (como diversos apartamentos em um mesmo condomínio, no mesmo dia e horário).
+						</p>
 
-					<p class="col-sm">Contamos com o atendimento personalizado, à domicílio. Temos condições especiais para vacinação de diversas famílias em um mesmo endereço (como diversos apartamentos em um mesmo condomínio, no mesmo dia e horário).
-					</p>
-				</div>
+						<br>
 
-				<div class="formulario">
-					<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					    <div class="modal-dialog" role="document">
-					        <div class="modal-content">
-					            <div class="modal-header text-center">
-					                <h4 class="modal-title w-100 font-weight-bold">Formulário</h4>
-					                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					                    <span aria-hidden="true">&times;</span>
-					                </button>
-					            </div>
-					            
-					            <div class="modal-body mx-3">
-					                <div class="md-form mb-5">
-					                    <i class="fa fa-user prefix grey-text"></i>
-					                    <input type="text" id="form34" class="form-control validate">
-					                    <label data-error="wrong" data-success="right" for="form34">Your name</label>
-					                </div>
+						<div class="formulario">
+							<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							    <div class="modal-dialog" role="document">
+							        <div class="modal-content">
+							            <div class="modal-header text-center">
+							                <h4 class="modal-title w-100 font-weight-bold">Formulário</h4>
+							                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							                    <span aria-hidden="true">&times;</span>
+							                </button>
+							            </div>
+							            
+							            <div class="modal-body mx-3">
+							                <div class="md-form mb-5">
+							                    <i class="fa fa-user prefix grey-text"></i>
+							                    <input type="text" id="form34" class="form-control validate">
+							                    <label data-error="wrong" data-success="right" for="form34">Your name</label>
+							                </div>
 
-					                <div class="md-form mb-5">
-					                    <i class="fa fa-envelope prefix grey-text"></i>
-					                    <input type="email" id="form29" class="form-control validate">
-					                    <label data-error="wrong" data-success="right" for="form29">Your email</label>
-					                </div>
+							                <div class="md-form mb-5">
+							                    <i class="fa fa-envelope prefix grey-text"></i>
+							                    <input type="email" id="form29" class="form-control validate">
+							                    <label data-error="wrong" data-success="right" for="form29">Your email</label>
+							                </div>
 
-					                <div class="md-form mb-5">
-					                    <i class="fa fa-tag prefix grey-text"></i>
-					                    <input type="text" id="form32" class="form-control validate">
-					                    <label data-error="wrong" data-success="right" for="form32">Subject</label>
-					                </div>
+							                <div class="md-form mb-5">
+							                    <i class="fa fa-tag prefix grey-text"></i>
+							                    <input type="text" id="form32" class="form-control validate">
+							                    <label data-error="wrong" data-success="right" for="form32">Subject</label>
+							                </div>
 
-					                <div class="md-form">
-					                    <i class="fa fa-pencil prefix grey-text"></i>
-					                    <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
-					                    <label data-error="wrong" data-success="right" for="form8">Your message</label>
-					                </div>
-						        </div>
-						        <div class="modal-footer d-flex justify-content-center">
-					                <button class="btn btn-unique">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
-					            </div>
-						    </div>
+							                <div class="md-form">
+							                    <i class="fa fa-pencil prefix grey-text"></i>
+							                    <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+							                    <label data-error="wrong" data-success="right" for="form8">Your message</label>
+							                </div>
+								        </div>
+								        <div class="modal-footer d-flex justify-content-center">
+							                <button class="btn btn-unique">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+							            </div>
+								    </div>
+								</div>
+							</div>
+
+							<div class="text-center">
+							    <button 
+							    	type="button"
+							    	class="btn btn-primary btn-lg " 
+							    	id="button-form"
+							    	data-toggle="modal" 
+							    	data-target="#modalContactForm">formulário
+							    </button>
+							</div>
 						</div>
 					</div>
-
-					<div class="text-center">
-					    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Preencha o formulário</a>
-					</div>
 				</div>
-			</div>
 
+				
+			</div>
+		</div>
+
+		<div class="container">
 			<div id="vacinas">
 				<br>
 				<br>
@@ -439,25 +458,33 @@
 					<img class="hist col-sm" src="img/icon/historia.png">
 					
 					<p class="col-sm">A PROCAT Vacinas começou como uma empresa de medicina ocupacional. Após alguns anos de operação, acabou deixando o ramo e passou a atuar como o braço corporativo para serviços de imunização da empresa Pró Imune – clínica número 1 em vacinação no ABC paulista. Com o crescimento das atividades da PROCAT, a mesma se separou e começou a atuar por conta própria.
-						No total, são 23 anos de mercado no ramo de vacinação humana. Nossas campanhas e clínicas já atingiram mais de 4 milhões de vidas em todo o Brasil.
+					No total, são 23 anos de mercado no ramo de vacinação humana. Nossas campanhas e clínicas já atingiram mais de 4 milhões de vidas em todo o Brasil.
 					</p>
 				</div>
 			</div>
 		</div>
 
 		<footer id="contato">
-			<address class="container">
-				<strong>ProcatVacinas</strong><br>
-				Rua Maurílio Vieira Ormonde, 101<br>
-				São Bernardo do Campo - SP<br>
-				Tel: (11) 2669-4062<br>
-			</address>
+			<div class="container">
+				<div class="adress1">
+					<img src="img/icon/procat-footer.png" title="ProcatVacinas">
+					<address class="rua">
+						Rua Maurílio Vieira Ormonde, 101<br>
+						São Bernardo do Campo - SP
+					</address>
+				</div>
 
-			<address class="container">
-				E-mail: contato@procatvacinas.com.br
-			</address>
+				<div class="adress2">
+					<address class="tel">
+						Tel: (11) 2669-4062<br>
+						contato@procatvacinas.com.br
+					</address>
+				</div>
+			</div>
 
-			<p class="container">copyright 2018 Ideas Tree</p>
+			<div class="container copy">
+				<p>Desenvolvido por Ideas Tree copyright 2018. Todos os direitos reservados</p>
+			</div>
 		</footer>
 	</body>
 
@@ -472,7 +499,7 @@
 			})
 
 			$("#clinicaA").mouseout(function() {
-				$(this).css("background-image", "url(img/hands.jpg)");
+				$(this).css("background-image", "url(img/clinic.jpg)");
 				$("#gmap_canvasA").css("display", "none");
 			})
 
@@ -483,8 +510,21 @@
 			})
 
 			$("#clinicaB").mouseout(function() {
-				$(this).css("background-image", "url(img/hands.jpg)");
+				$(this).css("background-image", "url(img/osasco.jpg)");
 				$("#gmap_canvasB").css("display", "none");
+			})
+
+			$("#button-form").click(function(e) {
+				var param = {
+					"to" : "mmmenendes@gmail.com",
+					"cc_to" : "lucasgfmoraes@gmail.com",
+					"reply_to" : "lucasgfmoraes@gmail.com",
+					"from_name": "from_name_value",
+					"to_name": "to_name_value",
+					"message_html": "message_html_value"
+				}
+				
+				sendEmail(param)
 			})
 		});
 

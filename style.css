@@ -32,6 +32,68 @@ header {
 	min-height: 60px;
 }
 
+label {
+	margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+
+#modal-h{
+	padding: 0px;
+	margin: 0px;
+}
+
+#modal-form{
+	background: none;
+    color: white;
+	width: 215%;
+	box-shadow: none;
+	border: none;
+}
+
+#modal-dialog{
+	margin-left: 10%;
+	margin-right: 0px;
+}
+
+#moda-nome{
+	width: 38%;
+	float: left;
+}
+
+#moda-email{
+	width: 58%;
+	float: right;
+}
+
+#moda-endereco{
+	width: 78%;
+	float: left;
+}
+
+#moda-telefone{
+	width: 18%;
+	float: right;
+}
+
+#moda-qtd{
+	width: 18%;
+	float: left;
+}
+
+#moda-empresa{
+	width: 78%;
+	float: right;
+}
+
+.md-form{
+	margin-bottom: 20px;
+}
+
+/*
+.modal-dialog {
+    width: 600px;
+
 /*ul, menu, dir {
     display: block;
     list-style-type: disc;
@@ -78,6 +140,15 @@ article, aside, footer, header, hgroup, main, nav, section {
     margin-top: 15px;
 }
 
+.blocos3 h2{
+	text-align: center;
+	font-size: 3rem;
+}
+
+.blocos{
+	text-align: justify;
+}
+
 .cliente{
 	width: 100%;
 	margin-top: 200px;
@@ -112,7 +183,7 @@ article, aside, footer, header, hgroup, main, nav, section {
 }
 
 .clientesSlides img{
-	height: 250px;
+	height: 180px;
 }
 
 
@@ -153,15 +224,21 @@ article, aside, footer, header, hgroup, main, nav, section {
 }
 
 #clinicaA{
-	background-image: url(img/hands.jpg);
+	background-image: url(img/clinic.jpg);
 	float: left;
-	margin-left: 20%;
+	margin-left: 17%;
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 
 #clinicaB{
-	background-image: url(img/hands.jpg);
+	background-image: url(img/osasco.jpg);
 	float: right;
-	margin-right: 20%;
+	margin-right: 17%;
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 
 #gmap_canvasA{
@@ -196,11 +273,44 @@ article, aside, footer, header, hgroup, main, nav, section {
 	float: left;
 	text-decoration: none;
 	float: left;
-	width: 300px
+	width: 100%;
+	padding: 0
 }
 
-.homecare p{
-	padding: 29px
+#homecare h1{
+	font-size:4.5rem
+}
+
+.img-home{
+	width: 30%;
+	float: left;
+}
+
+.home-txt{
+	width: 70%;
+	float: right;
+	margin-top: 30px;
+}
+
+.home-txt p{
+	padding: 29px;
+	font-size: 1.2em;
+	text-align: justify;
+}	
+
+#button-form{
+	background: #034164;
+    border: none;
+    padding: 2.5rem 4rem;
+    font-size: 2.0rem;
+    line-height: 0.5;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+}
+
+#vacinas h1{
+	font-size: 4.5rem;
+	text-align: center;
 }
 
 .img{
@@ -230,22 +340,55 @@ article, aside, footer, header, hgroup, main, nav, section {
 }
 
 .historia p{
-	padding: 29px
+	padding: 50px
+}
+
+.historia h1{
+	font-size: 4.5rem;
+	text-align: center;
 }
 
 footer{
 	background-color: #034164;
 	color: #FFF;
-	padding: 57px;
+	padding: 20px;
 	max-width:100%;
-	margin: 0 auto;
+	margin-top: 40px;
 }
 
 
-footer address:last-child {
+/*footer address:last-child {
 	margin-bottom: 0;
+}*/
+
+.adress1{
+	width: 35%;
+	float:left;
 }
 
+.rua{
+	float: right;
+	margin-top: 4%;
+}
+
+.copy{
+	margin-top: 2%;
+}
+
+.adress1 img{
+	width: 19%;
+}
+
+.adress2{
+	float: right;
+	text-align: right;
+	width: 50%
+	margin-top: 3%;
+}
+
+.tel{
+	margin-top: 6%;
+}
 
 @media screen and (max-width: 960px) {
 	 .collapse:not(.show) {
