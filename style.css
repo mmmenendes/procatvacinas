@@ -37,7 +37,6 @@ label {
     margin-top: 5px;
 }
 
-
 #modal-h{
 	padding: 0px;
 	margin: 0px;
@@ -46,14 +45,27 @@ label {
 #modal-form{
 	background: none;
     color: white;
-	width: 215%;
+	width: 157%;
 	box-shadow: none;
 	border: none;
 }
 
+#modal-title1{
+    font-size: 1.4em;
+}
+
+#modal-form input{
+	font-size: 1.2em;
+}
+
+#modal-form textarea{
+	font-size: 1.2em;
+}
+    
 #modal-dialog{
-	margin-left: 10%;
+	margin-left: 20%;
 	margin-right: 0px;
+	margin-top: 7%;
 }
 
 #moda-nome{
@@ -86,6 +98,13 @@ label {
 	float: right;
 }
 
+#button-form11{
+	background: #034164;
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+}
+
 .md-form{
 	margin-bottom: 20px;
 }
@@ -111,13 +130,13 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 .h1-left{
 	float : left;
-	width: 55%;
+	width: 58%;
 	margin-top: -100px;
 }
 
 .img-right{
 	float : right;
-	width: 45%;
+	width: 42%;
 	margin-top: -100px;
 }
 
@@ -129,8 +148,7 @@ article, aside, footer, header, hgroup, main, nav, section {
 .campanha img{
 	width: 40px;
     float: left;
-    margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 14px;
 }
 
 .campanha h1{
@@ -140,6 +158,22 @@ article, aside, footer, header, hgroup, main, nav, section {
     margin-top: 15px;
 }
 
+.campanha > .h1-left{
+	width: 59%;
+}
+
+.campanha > .img-right{
+	width: 41%;
+}
+
+.blocos3 p{
+	text-align: justify;
+	-webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
 .blocos3 h2{
 	text-align: center;
 	font-size: 3rem;
@@ -147,6 +181,16 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 .blocos{
 	text-align: justify;
+}
+
+#button-form1{
+	background: #034164;
+    border: none;
+    padding: 2.5rem 4rem;
+    font-size: 2.0rem;
+    line-height: 0.5;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
 }
 
 .cliente{
@@ -168,7 +212,7 @@ article, aside, footer, header, hgroup, main, nav, section {
     margin-top: 15px;
 }
 
-.client{
+.cliente-row{
 	padding-top: 15px;
 	width: 100%;
 }
@@ -185,7 +229,6 @@ article, aside, footer, header, hgroup, main, nav, section {
 .clientesSlides img{
 	height: 180px;
 }
-
 
 .clinicas{
 	background-image: url(img/hands.jpg);
@@ -207,14 +250,14 @@ article, aside, footer, header, hgroup, main, nav, section {
 .clinicas h1{
 	color: white;
     float: right;
-    margin-top: 15px;
     font-size: 4.5rem;
-    margin-top: 15px;
+    margin-top: 21px;
 }
 
 .clinicas h2{
 	color: white;
 }
+
 .clinica {
 	width: 400px;
     height: 400px;
@@ -272,7 +315,6 @@ article, aside, footer, header, hgroup, main, nav, section {
 #homecare img{
 	float: left;
 	text-decoration: none;
-	float: left;
 	width: 100%;
 	padding: 0
 }
@@ -281,7 +323,7 @@ article, aside, footer, header, hgroup, main, nav, section {
 	font-size:4.5rem
 }
 
-.img-home{
+.home-img{
 	width: 30%;
 	float: left;
 }
@@ -296,9 +338,39 @@ article, aside, footer, header, hgroup, main, nav, section {
 	padding: 29px;
 	font-size: 1.2em;
 	text-align: justify;
-}	
+}
 
-#button-form{
+#modalContactForm2{
+	width: 100%;
+}
+
+#modal-form2{
+	background: none;
+    color: white;
+	width: 100%;
+	box-shadow: none;
+	border: none;
+}
+
+#modal2-title1{
+	margin-left: 4%;
+    font-size: 1.4em;
+}
+	
+#dialog2{
+	margin: 0px;
+    margin-left: 32%;
+}
+
+#modal-form2 input{
+	font-size: 1.2em;
+}
+
+#modal-form2 textarea{
+	font-size: 1.2em;
+}
+
+#button-form2{
 	background: #034164;
     border: none;
     padding: 2.5rem 4rem;
@@ -306,6 +378,13 @@ article, aside, footer, header, hgroup, main, nav, section {
     line-height: 0.5;
     border-radius: 0.3rem;
     text-transform: uppercase;
+}
+
+#button-form21{
+	background: #034164;
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
 }
 
 #vacinas h1{
@@ -322,30 +401,32 @@ article, aside, footer, header, hgroup, main, nav, section {
 	background-size: cover;
 }
 
-.hist{
+.historia img{
+	float: left;
+	text-decoration: none;
+	float: left;
 	max-width: 100%;
     height: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
-}
-
-.historia img{
-	float: left;
-	text-decoration: none;
-	float: left;
-	width: 300px
 }
 
 .historia p{
-	padding: 50px
+	float: right;
+    width: 70%;
+    margin-top: 70px;
 }
 
 .historia h1{
 	font-size: 4.5rem;
 	text-align: center;
+}
+
+.h1-left-hist{
+	float : left;
+	width: 30%;
 }
 
 footer{
@@ -375,6 +456,13 @@ footer{
 	margin-top: 2%;
 }
 
+.copy p{
+	font-style: italic;
+	margin-top: 0;
+	font-size: 0.9em;
+	margin-bottom: 0px;
+}
+
 .adress1 img{
 	width: 19%;
 }
@@ -391,7 +479,310 @@ footer{
 }
 
 @media screen and (max-width: 960px) {
-	 .collapse:not(.show) {
+	footer{
+		margin-top: 10px;
+	}
+
+	.collapse:not(.show) {
 	  display: none;
+	}
+
+	.h1-left{
+		width: 74%;
+		margin-top: -70px;
+	}
+
+	.img-right{
+		width: 26%;
+		margin-top: -70px;
+	}
+
+	.campanha {
+	    margin-top: 70px;
+	}
+
+	.campanha h1 {
+    	font-size: 3.5rem;
+	}
+
+	.campanha img {
+		width: 28px;
+    	margin-top: 16px;
+	}
+
+	.campanha > .h1-left {
+	    width: 72%;
+	}
+
+	.campanha > .img-right {
+	    width: 28%;
+	}
+
+	.blocos3 p{
+		font-size: 1.2em;
+		text-align: left;
+		letter-spacing: -1px;
+	}
+
+	#oque{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	#beneficios{
+	}
+
+	#vacinas{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	#button-form1{
+		padding: 2.0rem 2.5rem;
+		margin-top: 20px;
+	}
+
+	.cliente {
+	    margin-top: 100px;
+	}
+
+	.cliente h1{
+	    font-size: 3.5rem;
+	}
+
+	.cliente img {
+		width: 70px;
+	}
+
+	.cliente > .h1-left {
+	    width: 62%;
+	}
+
+	.cliente > .img-right {
+	    width: 38%;
+	}
+
+	.cliente-row{
+		padding-top: 15px;
+		width: auto;
+	}
+
+	.clientesSlides div{
+		width: 100%;
+	}
+
+	.clientesSlides img{
+		height: 100px;
+	}
+
+	.clinicas{
+		background-image: url(img/hands-mini.jpg);
+		height: 625px;
+		padding-top: 0px;
+		margin-top: 30px;
+	}
+
+	.clinicas > .h1-left {
+		width: 70%;
+	    margin-top: 0px;
+	}
+
+	.clinicas > .img-right {
+		width: 30%;
+	    margin-top: 0px;
+	}
+
+	.clinicas img {
+		width: 40px;
+	}
+
+	.clinicas h2{
+		width: 90%;
+    	margin-left: 5%;
+	}
+
+	.clinicas h1{
+	    font-size: 3.5rem;
+	}
+
+	.clinica {
+	    width: 200px;
+	    height: 200px;
+		margin-bottom: 30px;
+	}
+
+	#clinicaA{
+		margin-left: 22%;
+	}
+
+	#clinicaB{
+		margin-right: 22%;
+	}
+
+	#homecare img{
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	#homecare h1{
+		font-size:3.5rem
+	}
+
+	.home-img{
+		width: 100%;
+	}
+
+	.home-txt{
+		width: 90%;
+		margin-top: 0px;
+		margin-right: 5%;
+	}
+
+	.home-txt p {
+	    padding: 0px;
+	    text-align: left;
+	    margin: 0px;
+	}
+
+	#modal-form {
+	    background: none;
+	    color: white;
+	    width: 100%;
+	    box-shadow: none;
+	    border: none;
+	}
+
+	#modal-dialog {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+
+	#modal-h{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#moda-nome{
+		width: 100%;
+		float: left;
+	}
+
+	#moda-email{
+		width: 100%;
+		float: right;
+	}
+
+	#moda-endereco{
+		width: 100%;
+		float: left;
+	}
+
+	#moda-telefone{
+		width: 100%;
+		float: right;
+	}
+
+	#moda-qtd{
+		width: 100%;
+		float: left;
+	}
+
+	#moda-empresa{
+		width: 100%;
+		float: right;
+	}
+
+	.btn{
+		padding: 0.375rem 0.75rem;
+	    font-size: 2rem;
+	    line-height: 1.5;
+	    border-radius: 0.25rem;
+	}
+
+	.md-form{
+		margin-bottom: 20px;
+	}
+
+	#button-form2 {
+		padding: 2.0rem 2.5rem;
+	    margin-top: 0px;
+	}
+
+	.modal-title{
+		font-size: 2.2em;
+	}
+
+	#moda-nome{
+		font-size: 2rem;
+	}
+
+	#vacinas h1 {
+	    font-size: 3.5rem;
+	}
+
+	.hist{
+		margin-top: 0px;
+	}
+
+	.hist > .h1-left {
+		width: 100%;
+	    margin-top: 0px;
+	}
+
+	.hist > .img-right {
+		width: 100%;
+	}
+
+	.historia h1 {
+	    font-size: 3.5rem;
+	}
+
+	.h1-left-hist{
+		float : left;
+		width: 100%;
+	}
+
+	.historia img{
+		width: auto;
+		height: 100px;
+	    margin: 0px;
+	    margin-left: 30%;
+	}
+
+	.historia p{
+		padding: 0px;
+	    margin-top: 10px;
+	    font-size: 1.1em;
+	    width: 98%;
+	}
+
+	.adress1{
+		width: auto;
+	}
+
+	.adress1 img{
+		width: 30%;
+	}
+
+	.rua{
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	.adress2{
+		width: auto;
+		text-align: left;
+		float: left;
+	}
+
+	.tel{
+		margin-top: 0px;
+	}
+
+	.copy p{
+		font-style: italic;
+	    margin-top: 0;
+	    font-size: 0.9em;
+	    margin-bottom: 0px;
 	}
 }

@@ -42,7 +42,7 @@
 }
 
 html {
-  
+  font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -190,8 +190,8 @@ pre,
 code,
 kbd,
 samp {
-  /*font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1em;*/
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
 }
 
 pre {
@@ -1826,6 +1826,7 @@ pre code {
 @media screen and (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;
+    font-size: 2rem;
   }
 }
 
