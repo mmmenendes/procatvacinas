@@ -220,7 +220,7 @@
 								</div>
 
 								<div align="center">
-									<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+									<button type="button" id="button-cancel11" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 									<button id="button-form11" class="btn btn-unique">Enviar<i class="fa fa-paper-plane-o ml-1"></i></button>
 								</div>
 							</div>
@@ -338,6 +338,7 @@
 							                </div>
 
 							                <div align="center">
+							                	<button type="button" id="button-cancel21" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 												<button type="button" id="button-form21" class="btn btn-unique btn-primary btn-lg">Enviar<i class="fa fa-paper-plane-o ml-1"></i></button>
 											</div>
 								        </div>
@@ -552,6 +553,14 @@
 				}
 				
 				sendEmail(param)
+			})
+
+			$("#button-cancel11").click(function(e) {
+				window.location.reload();
+			})
+
+			$("#button-cancel21").click(function(e) {
+				window.location.reload();
 			})
 		});
 

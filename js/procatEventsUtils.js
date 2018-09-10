@@ -97,6 +97,7 @@ function sendEmail(mailParamJSON){
 
 	emailjs.send(service_id,template_id, mailParamJSON, user_id).then(function(response) {
 		console.log('SUCCESS!', response.status, response.text);
+		window.location.reload();
 	}, function(error) {
 		console.log('FAILED...', error);
 	});

@@ -105,6 +105,12 @@ label {
     font-size: 1.8rem;
 }
 
+#button-cancel11{
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+}
+
 .md-form{
 	margin-bottom: 20px;
 }
@@ -382,6 +388,12 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 #button-form21{
 	background: #034164;
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+}
+
+#button-cancel21{
     border: none;
     padding: 1.5rem 2rem;
     font-size: 1.8rem;
