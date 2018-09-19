@@ -9,6 +9,7 @@ body {
 	margin: 0 auto; 
     padding: 0;
     height: 1600px;
+    overflow-x: hidden;
 }
 
 h1{
@@ -45,7 +46,7 @@ label {
 #modal-form{
 	background: none;
     color: white;
-	width: 157%;
+	width: 166%;
 	box-shadow: none;
 	border: none;
 }
@@ -63,7 +64,7 @@ label {
 }
     
 #modal-dialog{
-	margin-left: 20%;
+	margin-left: 19%;
 	margin-right: 0px;
 	margin-top: 7%;
 }
@@ -136,13 +137,13 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 .h1-left{
 	float : left;
-	width: 58%;
+	width: 54%;
 	margin-top: -100px;
 }
 
 .img-right{
 	float : right;
-	width: 42%;
+	width: 44%;
 	margin-top: -100px;
 }
 
@@ -165,11 +166,11 @@ article, aside, footer, header, hgroup, main, nav, section {
 }
 
 .campanha > .h1-left{
-	width: 59%;
+	width: 72%;
 }
 
 .campanha > .img-right{
-	width: 41%;
+	width: 27%;
 }
 
 .blocos3 p{
@@ -243,21 +244,22 @@ article, aside, footer, header, hgroup, main, nav, section {
 	height:700px;
 	text-align: center;
 	margin-top: 100px;
-	padding-top: 100px
+	padding-top: 100px;
+	margin-bottom: 7%;
 }
 
 .clinicas img{
-	width: 50px;
+	width: 66px;
     float: left;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 13px;
+    margin-top: 43px;
 }
 
 .clinicas h1{
 	color: white;
     float: right;
     font-size: 4.5rem;
-    margin-top: 21px;
+    margin-top: 39px;
 }
 
 .clinicas h2{
@@ -290,6 +292,63 @@ article, aside, footer, header, hgroup, main, nav, section {
     background-position: center center;
 }
 
+.clinicas > .h1-left{
+	max-width: 151%;
+    margin-left: 192px;
+    /* margin-top: -9px; */
+    padding-top: 2%;
+}
+
+.clinicas > .img-right{
+	width: 30%;
+}
+
+.information{
+	margin-top: 103px;
+	width: 100%;
+}
+
+.information p{
+	color: white;
+	font-size: 1.2em;
+	text-align: left;
+}
+
+
+.information img{
+	width: 55px;
+    float: left;
+    margin-left: 23px;
+    margin-top: -7px;
+}
+
+.tel-info p{
+	max-width: 78%;
+    /*margin-left: 57px;
+    text-align: center;*/
+}
+
+.info-rua{
+	margin-top: 5%;
+}
+
+.info-rua p{
+	max-width: 81%;
+    /*margin-left: 57px;*/
+    text-align: center;
+}
+
+.info-atendimento{
+	margin-top: 3%;
+}
+
+.info-atendimento p{
+	margin-top: 6px;
+	width: 77%;
+    margin-left: 82px;
+    text-align: center;
+}
+
 #gmap_canvasA{
 	height: 100%;
     width: 100%;
@@ -320,13 +379,27 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 #homecare img{
 	float: left;
-	text-decoration: none;
-	width: 100%;
-	padding: 0
+    text-decoration: none;
+    width: 25%;
+    padding: 0;
+    margin-top: 9px;
 }
 
 #homecare h1{
-	font-size:4.5rem
+	font-size:4.5rem;
+
+}
+
+.h1-left-home{
+	width: 88%;
+    margin-top: -64px;
+	float:left;
+}
+
+.img-right-home{
+	float: right;
+    width: 44%;
+    margin-top: -100px;
 }
 
 .home-img{
@@ -353,9 +426,11 @@ article, aside, footer, header, hgroup, main, nav, section {
 #modal-form2{
 	background: none;
     color: white;
-	width: 100%;
-	box-shadow: none;
-	border: none;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    margin-top: 85px;
+    margin-left: -14px;
 }
 
 #modal2-title1{
@@ -429,6 +504,7 @@ article, aside, footer, header, hgroup, main, nav, section {
 	float: right;
     width: 70%;
     margin-top: 70px;
+    text-align:justify;
 }
 
 .historia h1{
@@ -511,28 +587,35 @@ footer{
 
 	.campanha {
 	    margin-top: 70px;
+	    margin-bottom: -14%;
 	}
 
 	.campanha h1 {
-    	font-size: 3.5rem;
+    	font-size: 2.5rem;
+    	margin-top: 10%;
 	}
 
 	.campanha img {
-		width: 28px;
-    	margin-top: 16px;
+		width: 35px;
+    	margin-top: 18px;
 	}
 
 	.campanha > .h1-left {
-	    width: 72%;
+	    width: 83%;
+    	/* margin-bottom: -4%; */
 	}
 
 	.campanha > .img-right {
-	    width: 28%;
+	    width: 15%;
+	}
+
+	.blocos{
+
 	}
 
 	.blocos3 p{
 		font-size: 1.2em;
-		text-align: left;
+		text-align: justify;
 		letter-spacing: -1px;
 	}
 
@@ -589,19 +672,19 @@ footer{
 
 	.clinicas{
 		background-image: url(img/hands-mini.jpg);
-		height: 625px;
+		height: 700px;
 		padding-top: 0px;
 		margin-top: 30px;
 	}
 
 	.clinicas > .h1-left {
-		width: 70%;
+		width: 22%;
 	    margin-top: 0px;
 	}
 
 	.clinicas > .img-right {
-		width: 30%;
-	    margin-top: 0px;
+		width: 24%;
+    	margin-top: 15px;
 	}
 
 	.clinicas img {
@@ -631,9 +714,13 @@ footer{
 		margin-right: 22%;
 	}
 
+	#homecare{
+		margin-top: 9%;
+	}
+
 	#homecare img{
 		width: 50%;
-		margin-left: 25%;
+    	margin-left: 29%;
 	}
 
 	#homecare h1{
@@ -656,10 +743,20 @@ footer{
 	    margin: 0px;
 	}
 
+	.h1-left-home{
+		width: 72%;
+    	margin-top: -47px;
+	}
+
+	.img-right-home{
+		width: 45%;
+    	margin-top: -69px;
+	}
+
 	#modal-form {
 	    background: none;
 	    color: white;
-	    width: 100%;
+	    width: 95%;
 	    box-shadow: none;
 	    border: none;
 	}
@@ -726,6 +823,30 @@ footer{
 
 	#moda-nome{
 		font-size: 2rem;
+	}
+
+	.modal-body{
+		/* position: relative; */
+	    -ms-flex: 1 1 auto;
+	    flex: 6 4 auto;
+	    padding-right: 5rem;
+	    /* padding-left: 52px; */
+	    width: 100%;
+	}
+
+	#modal-form2{
+		background: none;
+	    color: white;
+	    width: 100%;
+	    box-shadow: none;
+	    border: none;
+	    margin-top: 40px;
+	    margin-left: -65px;
+	}
+
+	#modal2-title1 {
+	    margin-left: 11%;
+	    font-size: 2.4em;
 	}
 
 	#vacinas h1 {

@@ -16,7 +16,8 @@
 	position: relative;
   height: 50px;
   padding-top: 1%;
-      font-size: 1.7em;
+  font-size: 1.4em;
+  margin-left: 11%;
 }
 
 #menuHeader ul {
@@ -39,6 +40,15 @@
 #menuHeader ul li a{
 	text-decoration: none;
 }
+
+.cc{
+  word-spacing: -4px;
+}
+
+.at{
+  word-spacing: -4px;
+}
+
 
 #burgerMenu{
 	display: none;
@@ -162,8 +172,8 @@
   }
 
   #menuImg{
-    width: 18%;
-    height: 18%;
+    width: 16%;
+    /*height: 18%;*/
     float: left;
     background: white;
   }

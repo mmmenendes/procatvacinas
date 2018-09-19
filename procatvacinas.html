@@ -21,6 +21,9 @@
 
 		<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 
+		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+
 	</head>
 
 	<script>
@@ -37,7 +40,7 @@
 				$('#imgTopo').attr("src","img/vacina-mini.jpg");
 				$('#oque').css('width', containerWidth + 'px')
 				$('#beneficios').css('width', containerWidth + 'px')
-				$('#vacinas').css('width', containerWidth + 'px')
+				$('#vacinas2').css('width', containerWidth + 'px')
 				$('.clinicas').attr("align","center");
 			}else{
 				$(window).scroll(function () {
@@ -71,10 +74,10 @@
 					<nav id="menuHeader" class="container-fluid">
 						<ul>
 							<li>
-								<a href="#campanhas-corporativas" title="campanhas corporativas">campanhas corporativas</a> 
+								<a href="#campanhas-corporativas" title="campanhas corporativas" class="cc">campanhas corporativas</a> 
 							</li>
 							<li>
-								<a href="#clinicas" title="clínicas">clínicas</a>
+								<a href="#clinicas" title="clínicas" class="at">atendimento presencial</a>
 							</li>
 							<li>
 								<a href="#homecare" title="homecare">homecare</a>
@@ -95,7 +98,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#" title="homecare">menu</a>
+							<a href="#" title="menu">menu</a>
 						</li>
 					</ul>
 
@@ -103,7 +106,7 @@
 						<div id="sidebar-wrapper">
 							<ul class="sidebar-nav">
 								<li class="sidebar-brand">
-									<a href="index">procatvacinas</a>
+									<a href="index">procat vacinas</a>
 								</li>
 								<li>
 									<a href="#campanhas-corporativas">campanhas corporativas</a>
@@ -111,7 +114,7 @@
 								</li>
 
 								<li>
-									<a href="#clinicas">clínicas</a>
+									<a href="#clinicas">atendimento presencial</a>
 									<hr/>
 								</li>
 								<li>
@@ -133,7 +136,7 @@
 		</header>
 
 		<figure>
-			<img id="imgTopo" class="img" src="img/vacina.jpg"/>
+			<img id="imgTopo" class="img" src="img/vacina1.jpg"/>
 		</figure>
 
 		<div class="container">
@@ -141,12 +144,14 @@
 				<div id="campanhas-corporativas">
 					<div class="campanha">
 						<div class="h1-left">
-							<h1>campanhas</h1>
+							<h1>campanhas corporativas</h1>
 						</div>
 						<div class="img-right">
 							<img src="img/icon/agulha.png">
 						</div>
 						<hr style="height:1px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+						<br>
+						<br>
 						<br>
 					</div>
 				</div>
@@ -163,13 +168,13 @@
 
 						<div class="col-sm" align="justify" data-toggle="collapse" data-target="#beneficios1">
 							<h2 id="beneficios">benefícios</h2>	
-							<p id="beneficios1" class="collapse">Algumas vantagens da campanha de vacinação corporativa são a redução do absenteísmo; o combate ao presenteísmo; a diminuição na frequência de visitas médicas, favorecendo a negociação com as operadoras dos planos de saúde corporativos e, não menos importante, oferecer aos funcionários e seus dependentes um benefício tangível no que se refere a promoção da saúde do trabalhador.
+							<p id="beneficios1" class="collapse">Algumas vantagens da campanha de vacinação corporativa são a redução do absenteísmo; o combate ao presenteísmo; a diminuição na frequência de visitas médicas; favorecendo a negociação com as operadoras dos planos de saúde corporativos e, não menos importante, oferecer aos funcionários e seus dependentes um benefício tangível no que se refere a promoção da saúde do trabalhador.
 							</p>
 						</div>
 
 						<!--data-toggle="collapse" data-target="#vacinas1" EFEITO TOGGLE e COLLAPSE class="collapse"-->
 						<div class="col-sm" align="justify" data-toggle="collapse" data-target="#vacinas1">
-							<h2 id="vacinas">vacinas</h2>	
+							<h2 id="vacinas2">vacinas</h2>	
 							<p id="vacinas1" class="collapse">Trabalhamos com todo o portfólio de vacinas liberadas pela ANVISA, de todos os laboratórios.
 								A campanha contra a gripe é de abrangência nacional, com o início sujeito à chegada da vacina.
 								As demais campanhas compreendem HPV, hepatite, febre amarela, entre outras vacinas, dependendo exclusivamente da disponibilidade da mesma no mercado.
@@ -248,6 +253,8 @@
 						<img src="img/icon/client.png">
 					</div>
 					<hr style="height:1px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+					<br>
+					<br>
 				</div>
 
 				<div class="row cliente-row" align="center">
@@ -275,38 +282,109 @@
 
 		<div id="clinicas" class="clinicas">
 			<div class="h1-left">
-				<h1>clínicas</h1>
+				<h1>atendimento presencial</h1>
 			</div>
 
 			<div class="img-right">
 				<img src="img/icon/location1.png" class="img-responsive">
 			</div>
+
 			<br>
-			<h2>Atendimento presencial em uma das nossas salas de imunização.
-			</h2>
 			<br>
+
+			<div class="container">
+				<hr style="height:1px; border:none; color:#FFFFFF; background-color:#FFFFFF; margin-top: 0px; margin-bottom: 0px;"/>
+			</div>
+			<br>
+			<br>
+
+			<h2>CONTE COM O SERVIÇO DE VACINAÇÃO DA CLÍNICA CROCE PARA O ATENDIMENTO PRESENCIAL</h2>
+			<br>
+			
 			<div class="clinica" id="clinicaA" align="center">
 				<div id='gmap_canvasA'></div>
 			</div>
-			<div class="clinica" id="clinicaB">
-				<div id='gmap_canvasB'></div>
+
+			<div class="information col-sm">
+				<div class="tel-info">
+					<div>
+						<img src="img/icon/tel.png">
+					</div>
+					<div>
+						<p>(011) 3864.2246</p>
+					</div>
+				</div>
+
+				<div class="info-rua">
+					<div>
+						<img src="img/icon/location.png">
+					</div>
+					<div>
+						<p>Rua Heitor Penteado, 477 Sumaré, São Paulo - SP</p>
+					</div>
+				</div>
+
+				<div class="info-atendimento">
+					<div>
+						<img src="img/icon/atendimento.png">
+					</div>
+					<div>
+						<p>Atendimento: Segunda a sexta, das 8h00 às 18h30
+						Sábado, das 8h00 às 11h30</p>
+					</div>
+				</div>
 			</div>
+
+			<!--div class="clinica" id="clinicaB">
+				<div id='gmap_canvasB'></div>
+			</div-->
+
 		</div>
+
+		<br>
+		<br>
 
 		<div class="container">
 			<div id="homecare">
+				<div class="h1-left-home">
+					<h1>homecare</h1>
+				</div>
+				<div class="img-right-home">
+					<img class="home col-sm" src="img/icon/homecare.png">
+				</div>
+
+				<hr style="height:1px; border:none; color:#FFF; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
 				<br>
-				<h1>homecare</h1>
-				<hr style="height:2px; border:none; color:#FFF; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+				<br>
 				<br>
 
 				<div>
-					<div class="home-img" align="center">
+					<!--div class="home-img" align="center">
 						<img class="home col-sm" src="img/icon/homecare.png">
 					</div>
-					<div class="home-txt">
-						<p class="col-sm">Contamos com o atendimento personalizado, à domicílio. Temos condições especiais para vacinação de diversas famílias em um mesmo endereço (como diversos apartamentos em um mesmo condomínio, no mesmo dia e horário).
-						</p>
+					<div class="home-txt"-->
+						<div class="blocos">
+							<div class="row blocos3">
+								<div class="col-sm">
+									<h2>Conforto</h2>	
+									<p align="justify"> Levamos o serviço de vacinação para dentro da sua casa. Assim, evita-se o deslocamento do paciente até uma clínica ou hospital, o que pode ser um inconveniente nos casos de crianças pequenas, idosos, pessoas com dificuldade de deslocamento e mesmo quem não tem tempo.
+									</p>
+								</div>
+
+								<div class="col-sm" >
+									<h2>Praticidade</h2>	
+									<p align="justify"> Agende o seu atendimento de acordo com a sua conveniência. Atendemos em horário comercial de segunda a sexta e sábado pela manhã, em toda Grande São Paulo. Entre em contato usando o formulário abaixo, e-mail, telefone e Whatsapp.
+									</p>
+								</div>
+
+								<!--data-toggle="collapse" data-target="#vacinas1" EFEITO TOGGLE e COLLAPSE class="collapse"-->
+								<div class="col-sm">
+									<h2>Profissionalismo</h2>	
+									<p align="justify">A nossa equipe de enfermagem é qualificada para aplicação de todo tipo de vacina e passar todas as orientações necessárias. A enfermeira entrará em contato com o solicitante antes da visita para dar orientações e tirar dúvidas sobre o atendimento. No dia da visita, todo o material necessário para a aplicação será enviado junto com a profissional, sendo necessário somente o fornecimento de um espaço para o preparo da vacina.
+									</p>
+								</div>
+							</div>
+						</div>
 
 						<br>
 
@@ -314,7 +392,7 @@
 							<div class="modal fade" id="modalContactForm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							    <div id="dialog2" class="modal-dialog" role="document">
 							        <div id="modal-form2" class="modal-content">
-							            <h4 id="modal2-title1" class="modal-title w-100 font-weight-bold">solicitar cotação</h4>
+							            <h4 id="modal2-title1" class="modal-title w-100 font-weight-bold">formulário</h4>
 
 							            <div class="modal-body mx-3">
 							                <div class="md-form">
@@ -356,101 +434,85 @@
 							    </button>
 							</div>
 						</div>
-					</div>
+					<!--/div-->
 				</div>
-
-				
 			</div>
 		</div>
+
+		<br>
+		<br>
 
 		<div class="container">
 			<div id="vacinas">
 				<br>
 				<h1>vacinas</h1>
-				<hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+				<hr style="height:1px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
 				<br>
-
+				<br>
+				<br>
 				
-				<table class="table table-responsive">
+				<table id="vacinas" class="table table-responsive">
 				  <thead>
-				    <tr>
-				      <th scope="col">#</th>
-				      <th scope="col">Vacina</th>
+				    <tr>				      
+				      <th scope="col">Vacinas</th>
 				      <th scope="col">Descrição da doença</th>
 				      <th scope="col">Indicação</th>
 				    </tr>
 				  </thead>
 				  <tbody>
-				    <tr>
-				      <th scope="row">1</th>
+				    <tr>				      
 				      <td>Influenza(gripe)</td>
-				      <td>Infecção do sistema respiratório que pode evoluir para pneumonia.</td>
+				      <td>Infecção do sistema respiratório que pode evoluir para doenças mais graves, como pneumonia.</td>
 				      <td>à partir de 6 meses</td>
 				    </tr>
-				    <tr>
-				      <th scope="row">2</th>
+				    <tr>				      
 				      <td>HPV</td>
-				      <td>Doença sexualmente transmissível e responsável por alguns tipos de cânceres</td>
+				      <td>Doença sexualmente transmissível. É responsável por diversos tipos de câncer em homens e mulheres</td>
 				      <td>à partir de 9 anos</td>
 				    </tr>
-				    <tr>
-				      <th scope="row">3</th>
+				    <tr>				      
 				      <td>Hepatite A</td>
 				      <td>Infecção aguda do figado que pode evoluir de forma fulminante e fatal;</td>
 				      <td>à partir de 1 ano de vida.</td>
 				    </tr>
-				    <tr>
-				      <th scope="row">4</th>
+				    <tr>				     
 				      <td>Hepatite B</td>
 				      <td>Infecção crônica do fígado, sendo a principal causa de câncer hepático.</td>
 				      <td>ao nascer e gestantes.</td>
 				    </tr>
-				    <tr>
-				      <th scope="row">5</th>
-				      <td>DTPa</td>
-				      <td>Tríplice bacteriana, protege a contra difteria, o tétano e a coqueluche.</td>
+				    <tr>				      
+				      <td>DTPA</td>
+				      <td>Tríplice bacteriana, protege a contra Difteria, Tétano e Coqueluche.</td>
 				      <td>à partir de 5 anos e gestantes.</td>
 				    </tr>
-				    <tr>
-				      <th scope="row">6</th>
-				      <td>Vericela</td>
-				      <td>A varicela (catapora) é uma doença infecciosa, altamente contagiosa.</td>
+				    <tr>				      
+				      <td>Varicela</td>
+				      <td>Também conhecida como catapora, é uma doença infecciosa, altamente contagiosa.</td>
 				      <td>à partir de 1 ano de vida.</td>
 				    </tr>
-				    <tr>
-				      <th scope="row">7</th>
+				    <tr>				      
 				      <td>Febre Amarela</td>
 				      <td>Doença infecciosa febril aguda, transmitida pelo mosquito Aedes aegypti.</td>
 				      <td>à partir de 9 meses.</td>
 				    </tr>
-				    <tr>
-				      <th scope="row">8</th>
-				      <td>Meningócica ACWY</td>
+				    <tr>				      
+				      <td>Meningocócica</td>
 				      <td>Infecção bacteriana aguda, potencialmente letal, nas membranas do sistema nervoso central levando à meningite e/ou infecção generalizada.</td>
 				      <td>à partir de 2 meses.</td>
 				    </tr>
-				    <tr>
-				      <th scope="row">9</th>
-				      <td>HerpesZoster</td>
+				    <tr>				      
+				      <td>Herpes-Zóster</td>
 				      <td>Conhecida como "cobreiro", é uma doença infecciosa causada pelo mesmo vírus da catapora, provocando lesões causadoras de fortes dores no corpo.</td>
 				      <td>à partir de 50 anos.</td>
 				    </tr>
-				    <tr>
-				      <th scope="row">10</th>
-				      <td>Hepatite A</td>
-				      <td>Infecção aguda do figado que pode evoluir de forma fulminante e fatal;</td>
-				      <td>à partir de 1 ano de vida.</td>
-				    </tr>
-				    <tr>
-				      <th scope="row">11</th>
+				    <tr>	   
 				      <td>Pneumocócicas</td>
 				      <td>Bactéria que causa várias doenças como otite e sinusite, e outras mais graves como a pneumonia, a meningite e a septicemia.</td>
 				      <td>à partir de 2 meses.</td>
 				    </tr>
-				    <tr>
-				      <th scope="row">12</th>
-				      <td>Tróplice viral</td>
-				      <td>Proteção contra o Sarampo, a Caxumba e a Rubéola.</td>
+				    <tr>				      
+				      <td>Tríplice viral</td>
+				      <td>Proteção contra os vírus causadores do Sarampo, Caxumba e Rubéola.</td>
 				      <td>à partir de 1 ano.</td>
 				    </tr>
 				  </tbody>
@@ -464,8 +526,8 @@
 			<div class="historia">
 				<br>
 				<h1>história</h1>
+				<hr style="height:1px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
 				<br>
-				<hr style="height:2px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
 				<br>
 				<div class="hist">
 					<div class="h1-left-hist">
@@ -494,7 +556,9 @@
 				<div class="adress2">
 					<address class="tel">
 						Tel: (11) 2669-4062<br>
-						contato@procatvacinas.com.br
+						(11) 2669-6071<br>
+						(11) 4121-5596<br>
+						comercial@procatvacinas.com.br
 					</address>
 				</div>
 			</div>
@@ -565,7 +629,6 @@
 		});
 
 		google.maps.event.addDomListener(window, 'load', init_map('gmap_canvasA', -23.5475414, -46.68765350000001, '<strong>clínica médica croce</strong><br>rua heitor penteado 447<br>'));
-		google.maps.event.addDomListener(window, 'load', init_map('gmap_canvasB', -23.5664473, -46.74371159999998, '<strong>centro de vacinação policlinica bonfiglioli</strong><br>av corifeu de azevedo marques, 2697<br>'));
+		/*google.maps.event.addDomListener(window, 'load', init_map('gmap_canvasB', -23.5664473, -46.74371159999998, '<strong>centro de vacinação policlinica bonfiglioli</strong><br>av corifeu de azevedo marques, 2697<br>'));*/
 	</script>
 </html>
-
