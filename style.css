@@ -46,7 +46,7 @@ label {
 #modal-form{
 	background: none;
     color: white;
-	width: 166%;
+	width: 168%;
 	box-shadow: none;
 	border: none;
 }
@@ -179,6 +179,7 @@ article, aside, footer, header, hgroup, main, nav, section {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+    text-transform: initial;
 }
 
 .blocos3 h2{
@@ -324,6 +325,7 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 .tel-info p{
 	max-width: 78%;
+	text-align: center;
     /*margin-left: 57px;
     text-align: center;*/
 }
@@ -391,14 +393,14 @@ article, aside, footer, header, hgroup, main, nav, section {
 }
 
 .h1-left-home{
-	width: 88%;
+	width: 89%;
     margin-top: -64px;
 	float:left;
 }
 
 .img-right-home{
 	float: right;
-    width: 44%;
+    width: 43%;
     margin-top: -100px;
 }
 
@@ -474,6 +476,30 @@ article, aside, footer, header, hgroup, main, nav, section {
     font-size: 1.8rem;
 }
 
+.text-table{
+    text-indent: inherit;
+    text-transform: initial;
+}
+
+#vacinas img{
+	width: 65px;
+    float: left;
+    /* margin-left: 0px; */
+    margin-top:30px;
+}
+
+.h1-left-vacina {
+    width: 95%;
+    margin-top: -63px;
+    float: left;
+}
+
+.img-right-vacina {
+    float: right;
+    width: 43%;
+    margin-top: -100px;
+}
+
 #vacinas h1{
 	font-size: 4.5rem;
 	text-align: center;
@@ -488,7 +514,7 @@ article, aside, footer, header, hgroup, main, nav, section {
 	background-size: cover;
 }
 
-.historia img{
+/*.historia img{
 	float: left;
 	text-decoration: none;
 	float: left;
@@ -498,13 +524,15 @@ article, aside, footer, header, hgroup, main, nav, section {
     -moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
+}*/
 
 .historia p{
-	float: right;
-    width: 70%;
-    margin-top: 70px;
-    text-align:justify;
+	    /* float: right; */
+    width: 100%;
+    margin-top: 33px;
+    text-align: justify;
+    /* margin-right: 20px; */
+    text-transform: initial;
 }
 
 .historia h1{
@@ -512,10 +540,35 @@ article, aside, footer, header, hgroup, main, nav, section {
 	text-align: center;
 }
 
-.h1-left-hist{
+.h1-left-historia{
+	width: 91%;
+    margin-top: -64px;
+	float:left;
+}
+
+.img-right-historia{
+	float: right;
+    width: 41%;
+    margin-top: -100px;
+}
+
+/*.h1-left-hist{
 	float : left;
 	width: 30%;
+}*/
+
+.fachada{
+    width: 100%;
 }
+
+
+.hist-img {
+    width: 65px;
+    float: left;
+    /* margin-left: 0px; */
+    margin-top: 30px;
+
+} 
 
 footer{
 	background-color: #034164;
@@ -526,9 +579,9 @@ footer{
 }
 
 
-/*footer address:last-child {
+footer address:last-child {
 	margin-bottom: 0;
-}*/
+}
 
 .adress1{
 	width: 35%;
@@ -591,8 +644,8 @@ footer{
 	}
 
 	.campanha h1 {
-    	font-size: 2.5rem;
-    	margin-top: 10%;
+    	font-size: 2em;
+    	/*margin-top: 10%;*/
 	}
 
 	.campanha img {
@@ -601,12 +654,12 @@ footer{
 	}
 
 	.campanha > .h1-left {
-	    width: 83%;
+	    width: 76%;
     	/* margin-bottom: -4%; */
 	}
 
 	.campanha > .img-right {
-	    width: 15%;
+	    width: 24%;
 	}
 
 	.blocos{
@@ -617,6 +670,7 @@ footer{
 		font-size: 1.2em;
 		text-align: justify;
 		letter-spacing: -1px;
+		text-transform: initial;
 	}
 
 	#oque{
@@ -630,6 +684,21 @@ footer{
 	#vacinas{
 		margin-top: 15px;
 		margin-bottom: 15px;
+	}
+
+	.h1-left-vacina {
+	    width: 89%;
+	    margin-top: -57px;
+	}
+
+	.img-right-vacina {
+	    width: 33%;
+	    margin-top: -94px;
+	}
+
+	#vacinas img {
+	    width: 53px;
+	    margin-top: 30px;
 	}
 
 	#button-form1{
@@ -670,6 +739,7 @@ footer{
 		height: 100px;
 	}
 
+
 	.clinicas{
 		background-image: url(img/hands-mini.jpg);
 		height: 700px;
@@ -678,7 +748,7 @@ footer{
 	}
 
 	.clinicas > .h1-left {
-		width: 22%;
+		width: 20%;
 	    margin-top: 0px;
 	}
 
@@ -687,8 +757,11 @@ footer{
     	margin-top: 15px;
 	}
 
-	.clinicas img {
-		width: 40px;
+	.img-location {
+		width: 58px;
+	    float: left;
+	    margin-left: 6px;
+	    margin-top: 31px;
 	}
 
 	.clinicas h2{
@@ -712,6 +785,46 @@ footer{
 
 	#clinicaB{
 		margin-right: 22%;
+	}
+
+	.information > img{
+		width: 43px;
+		margin-right: 13px;
+	}
+
+	.information{
+		margin-top: 213px;
+		width: 100%;
+	}
+
+	.information p{
+		color: white;
+	}
+
+	.tel-info p{
+		max-width: 78%;
+		font-size: 1rem;
+		text-align: left;
+	}
+
+	.info-rua{
+		margin-top: 11%;
+	}
+
+	.info-rua p{
+		max-width: 81%;
+	   font-size: 1rem;
+	   text-align: left;
+	}
+
+	.info-atendimento{
+		margin-top: 7%;
+	}
+
+	.info-atendimento p{
+		margin-top: 8px;
+	    font-size: 1rem;
+	    text-align: left;
 	}
 
 	#homecare{
@@ -866,27 +979,34 @@ footer{
 		width: 100%;
 	}
 
+	.img-right-historia {
+	    float: right;
+	    width: 48%;
+	    margin-top: -84px;
+	}
+
 	.historia h1 {
 	    font-size: 3.5rem;
 	}
 
-	.h1-left-hist{
-		float : left;
-		width: 100%;
+	.h1-left-historia{
+		width: 83%;
+    	margin-top: -64px;
 	}
 
 	.historia img{
 		width: auto;
-		height: 100px;
+		height: 78px;
 	    margin: 0px;
 	    margin-left: 30%;
 	}
 
-	.historia p{
-		padding: 0px;
-	    margin-top: 10px;
+	.historia p {
+	    padding-left: 37px;
+	    margin-top: 35px;
 	    font-size: 1.1em;
-	    width: 98%;
+	    width: 100%;
+	    text-align: justify;
 	}
 
 	.adress1{

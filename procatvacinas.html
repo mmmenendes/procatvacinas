@@ -196,12 +196,12 @@
 
 								<div id="moda-email" class="md-form">
 									<i class="fa fa-envelope prefix grey-text"></i>
-									<input type="email" id="formSCEmail" class="form-control validate"  placeholder="E-mail">
+									<input type="email" id="formSCEmail" class="form-control validate"  placeholder="Cargo">
 								</div>
 
 								<div id="moda-endereco" class="md-form">
 									<i class="fa fa-pencil prefix grey-text"></i>
-									<input type="text" id="formSCEndereco" class="form-control validate" placeholder="Endereço">
+									<input type="text" id="formSCEndereco" class="form-control validate" placeholder="E-mail">
 								</div>
 
 								<div id="moda-telefone" class="md-form">
@@ -211,17 +211,22 @@
 
 								<div id="moda-qtd" class="md-form">
 									<i class="fa fa-pencil prefix grey-text"></i>
-									<input type="text" id="formSCQTD" class="form-control validate" placeholder="Qtd. vacinas">
+									<input type="text" id="formSCQTD" class="form-control validate" placeholder="Empresa">
 								</div>
 
 								<div id="moda-empresa" class="md-form">
 									<i class="fa fa-pencil prefix grey-text"></i>
-									<input type="text" id="formSCEmpresa" class="form-control validate" placeholder="Empresa">
+									<input type="text" id="formSCEmpresa" class="form-control validate" placeholder="Endereço">
 								</div>
 
 								<div class="md-form">
 									<i class="fa fa-pencil prefix grey-text"></i>
 									<input type="text" id="formSCVacina" class="form-control validate" placeholder="Vacina">
+								</div>
+
+								<div class="md-form">
+									<i class="fa fa-pencil prefix grey-text"></i>
+									<input type="text" id="formSCVacina" class="form-control validate" placeholder="Quantidade">
 								</div>
 
 								<div align="center">
@@ -286,7 +291,7 @@
 			</div>
 
 			<div class="img-right">
-				<img src="img/icon/location1.png" class="img-responsive">
+				<img src="img/icon/location1.png" class="img-responsive img-location">
 			</div>
 
 			<br>
@@ -305,17 +310,17 @@
 				<div id='gmap_canvasA'></div>
 			</div>
 
-			<div class="information col-sm">
-				<div class="tel-info">
+			<div class="information">
+				<div class="tel-info col-sm">
 					<div>
 						<img src="img/icon/tel.png">
 					</div>
 					<div>
-						<p>(011) 3864.2246</p>
+						<p>(11) 3864.2246</p>
 					</div>
 				</div>
 
-				<div class="info-rua">
+				<div class="info-rua col-sm">
 					<div>
 						<img src="img/icon/location.png">
 					</div>
@@ -324,7 +329,7 @@
 					</div>
 				</div>
 
-				<div class="info-atendimento">
+				<div class="info-atendimento col-sm">
 					<div>
 						<img src="img/icon/atendimento.png">
 					</div>
@@ -367,20 +372,20 @@
 							<div class="row blocos3">
 								<div class="col-sm">
 									<h2>Conforto</h2>	
-									<p align="justify"> Levamos o serviço de vacinação para dentro da sua casa. Assim, evita-se o deslocamento do paciente até uma clínica ou hospital, o que pode ser um inconveniente nos casos de crianças pequenas, idosos, pessoas com dificuldade de deslocamento e mesmo quem não tem tempo.
+									<p> Levamos o serviço de vacinação para dentro da sua casa. Assim, evita-se o deslocamento do paciente até uma clínica ou hospital, o que pode ser um inconveniente nos casos de crianças pequenas, idosos, pessoas com dificuldade de deslocamento e mesmo quem não tem tempo.
 									</p>
 								</div>
 
 								<div class="col-sm" >
 									<h2>Praticidade</h2>	
-									<p align="justify"> Agende o seu atendimento de acordo com a sua conveniência. Atendemos em horário comercial de segunda a sexta e sábado pela manhã, em toda Grande São Paulo. Entre em contato usando o formulário abaixo, e-mail, telefone e Whatsapp.
+									<p> Agende o seu atendimento de acordo com a sua conveniência. Atendemos em horário comercial de segunda a sexta e sábado pela manhã, em toda Grande São Paulo. Entre em contato usando o formulário abaixo, e-mail, telefone e Whatsapp.
 									</p>
 								</div>
 
 								<!--data-toggle="collapse" data-target="#vacinas1" EFEITO TOGGLE e COLLAPSE class="collapse"-->
 								<div class="col-sm">
 									<h2>Profissionalismo</h2>	
-									<p align="justify">A nossa equipe de enfermagem é qualificada para aplicação de todo tipo de vacina e passar todas as orientações necessárias. A enfermeira entrará em contato com o solicitante antes da visita para dar orientações e tirar dúvidas sobre o atendimento. No dia da visita, todo o material necessário para a aplicação será enviado junto com a profissional, sendo necessário somente o fornecimento de um espaço para o preparo da vacina.
+									<p>A nossa equipe de enfermagem é qualificada para aplicação de todo tipo de vacina e passar todas as orientações necessárias. A enfermeira entrará em contato com o solicitante antes da visita para dar orientações e tirar dúvidas sobre o atendimento. No dia da visita, todo o material necessário para a aplicação será enviado junto com a profissional, sendo necessário somente o fornecimento de um espaço para o preparo da vacina.
 									</p>
 								</div>
 							</div>
@@ -441,16 +446,27 @@
 
 		<br>
 		<br>
+		<br>
+		<br>
 
 		<div class="container">
 			<div id="vacinas">
+		
 				<br>
-				<h1>vacinas</h1>
+				<div class="h1-left-vacina">
+					<h1>vacinas</h1>
+				</div>
+
+				<div class="img-right-vacina">
+					<img src="img/icon/vacinas.png">
+				</div>
+
 				<hr style="height:1px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
+
 				<br>
 				<br>
 				<br>
-				
+
 				<table id="vacinas" class="table table-responsive">
 				  <thead>
 				    <tr>				      
@@ -462,57 +478,57 @@
 				  <tbody>
 				    <tr>				      
 				      <td>Influenza(gripe)</td>
-				      <td>Infecção do sistema respiratório que pode evoluir para doenças mais graves, como pneumonia.</td>
-				      <td>à partir de 6 meses</td>
+				      <td class="text-table">Infecção do sistema respiratório que pode evoluir para doenças mais graves, como pneumonia.</td>
+				      <td>à partir de 6 meses.</td>
 				    </tr>
 				    <tr>				      
 				      <td>HPV</td>
-				      <td>Doença sexualmente transmissível. É responsável por diversos tipos de câncer em homens e mulheres</td>
-				      <td>à partir de 9 anos</td>
+				      <td class="text-table">Doença sexualmente transmissível. É responsável por diversos tipos de câncer em homens e mulheres.</td>
+				      <td>à partir de 9 anos.</td>
 				    </tr>
 				    <tr>				      
 				      <td>Hepatite A</td>
-				      <td>Infecção aguda do figado que pode evoluir de forma fulminante e fatal;</td>
+				      <td class="text-table">Infecção aguda do figado que pode evoluir de forma fulminante e fatal.</td>
 				      <td>à partir de 1 ano de vida.</td>
 				    </tr>
 				    <tr>				     
 				      <td>Hepatite B</td>
-				      <td>Infecção crônica do fígado, sendo a principal causa de câncer hepático.</td>
+				      <td class="text-table">Infecção crônica do fígado, sendo a principal causa de câncer hepático.</td>
 				      <td>ao nascer e gestantes.</td>
 				    </tr>
 				    <tr>				      
 				      <td>DTPA</td>
-				      <td>Tríplice bacteriana, protege a contra Difteria, Tétano e Coqueluche.</td>
+				      <td class="text-table">Tríplice bacteriana, protege a contra Difteria, Tétano e Coqueluche.</td>
 				      <td>à partir de 5 anos e gestantes.</td>
 				    </tr>
 				    <tr>				      
 				      <td>Varicela</td>
-				      <td>Também conhecida como catapora, é uma doença infecciosa, altamente contagiosa.</td>
+				      <td class="text-table">Também conhecida como catapora, é uma doença infecciosa, altamente contagiosa.</td>
 				      <td>à partir de 1 ano de vida.</td>
 				    </tr>
 				    <tr>				      
 				      <td>Febre Amarela</td>
-				      <td>Doença infecciosa febril aguda, transmitida pelo mosquito Aedes aegypti.</td>
+				      <td class="text-table">Doença infecciosa febril aguda, transmitida pelo mosquito Aedes aegypti.</td>
 				      <td>à partir de 9 meses.</td>
 				    </tr>
 				    <tr>				      
 				      <td>Meningocócica</td>
-				      <td>Infecção bacteriana aguda, potencialmente letal, nas membranas do sistema nervoso central levando à meningite e/ou infecção generalizada.</td>
+				      <td class="text-table">Infecção bacteriana aguda, potencialmente letal, nas membranas do sistema nervoso central levando à meningite e/ou infecção generalizada.</td>
 				      <td>à partir de 2 meses.</td>
 				    </tr>
 				    <tr>				      
 				      <td>Herpes-Zóster</td>
-				      <td>Conhecida como "cobreiro", é uma doença infecciosa causada pelo mesmo vírus da catapora, provocando lesões causadoras de fortes dores no corpo.</td>
+				      <td class="text-table">Conhecida como "cobreiro", é uma doença infecciosa causada pelo mesmo vírus da catapora, provocando lesões causadoras de fortes dores no corpo.</td>
 				      <td>à partir de 50 anos.</td>
 				    </tr>
 				    <tr>	   
 				      <td>Pneumocócicas</td>
-				      <td>Bactéria que causa várias doenças como otite e sinusite, e outras mais graves como a pneumonia, a meningite e a septicemia.</td>
+				      <td class="text-table">Bactéria que causa várias doenças como otite e sinusite, e outras mais graves como a pneumonia, a meningite e a septicemia.</td>
 				      <td>à partir de 2 meses.</td>
 				    </tr>
 				    <tr>				      
 				      <td>Tríplice viral</td>
-				      <td>Proteção contra os vírus causadores do Sarampo, Caxumba e Rubéola.</td>
+				      <td class="text-table">Proteção contra os vírus causadores do Sarampo, Caxumba e Rubéola.</td>
 				      <td>à partir de 1 ano.</td>
 				    </tr>
 				  </tbody>
@@ -522,20 +538,31 @@
 
 			<br>
 			<br>
+			<br>
+			<br>
 
 			<div class="historia">
 				<br>
-				<h1>história</h1>
+								
+				<div class="h1-left-historia">
+					<h1>história</h1>
+				</div>
+
+				<div class="img-right-historia">
+					<img class="hist-img" src="img/icon/hist.png">
+				</div>
+
 				<hr style="height:1px; border:none; color:#000; background-color:#000; margin-top: 0px; margin-bottom: 0px;"/>
 				<br>
 				<br>
+
 				<div class="hist">
-					<div class="h1-left-hist">
-						<img class="hist col-sm" src="img/icon/historia.png">
+					<div>
+						<img class="img-responsive fachada"" src="img/fachada.jpeg">
 					</div>
 
 					<div >
-						<p class="col-sm">A PROCAT Vacinas começou como uma empresa de medicina ocupacional. Após alguns anos de operação, acabou deixando o ramo e passou a atuar como o braço corporativo para serviços de imunização da empresa Pró Imune – clínica número 1 em vacinação no ABC paulista. Com o crescimento das atividades da PROCAT, a mesma se separou e começou a atuar por conta própria.
+						<p>A PROCAT VACINAS começou como uma empresa de medicina ocupacional. Após alguns anos de operação, acabou deixando o ramo e passou a atuar como o braço corporativo para serviços de imunização da empresa Pró Imune – clínica número 1 em vacinação no ABC paulista. Com o crescimento das atividades da PROCAT, a mesma se separou e começou a atuar por conta própria.
 						No total, são 23 anos de mercado no ramo de vacinação humana. Nossas campanhas e clínicas já atingiram mais de 4 milhões de vidas em todo o Brasil.
 						</p>
 					</div>
