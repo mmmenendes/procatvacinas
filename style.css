@@ -514,6 +514,16 @@ article, aside, footer, header, hgroup, main, nav, section {
 	background-size: cover;
 }
 
+.historia {
+	background-image: url(img/fachada1.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 379px;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
 /*.historia img{
 	float: left;
 	text-decoration: none;
@@ -527,17 +537,19 @@ article, aside, footer, header, hgroup, main, nav, section {
 }*/
 
 .historia p{
-	    /* float: right; */
     width: 100%;
     margin-top: 33px;
     text-align: justify;
     /* margin-right: 20px; */
     text-transform: initial;
+    color: white;
+    /* padding-left: 18%; */
 }
 
 .historia h1{
 	font-size: 4.5rem;
 	text-align: center;
+	color: white
 }
 
 .h1-left-historia{
@@ -548,18 +560,18 @@ article, aside, footer, header, hgroup, main, nav, section {
 
 .img-right-historia{
 	float: right;
-    width: 41%;
+    width: 45%;
     margin-top: -100px;
 }
 
 /*.h1-left-hist{
 	float : left;
 	width: 30%;
-}*/
+}
 
 .fachada{
     width: 100%;
-}
+}*/
 
 
 .hist-img {
@@ -575,7 +587,6 @@ footer{
 	color: #FFF;
 	padding: 20px;
 	max-width:100%;
-	margin-top: 40px;
 }
 
 
@@ -604,7 +615,7 @@ footer address:last-child {
 	margin-bottom: 0px;
 }
 
-.adress1 img{
+.foto-footer{
 	width: 19%;
 }
 
@@ -618,6 +629,25 @@ footer address:last-child {
 .tel{
 	margin-top: 6%;
 }
+
+.facebook{
+	width: 35px;
+    padding-top: 8%;
+}
+
+.linkedin{
+	width: 36px;
+    padding-top: 8%;
+    margin-left: 10px;    
+}
+
+.mwedia{
+	width: 30%;
+}
+
+
+
+
 
 @media screen and (max-width: 960px) {
 	footer{
@@ -1002,19 +1032,25 @@ footer address:last-child {
 	}
 
 	.historia p {
-	    padding-left: 37px;
 	    margin-top: 35px;
 	    font-size: 1.1em;
 	    width: 100%;
 	    text-align: justify;
 	}
 
+	.historia{
+		background-image: url(img/fachada-mini.jpg);
+		height: 550px;
+		padding-top: 0px;
+		margin-top: 30px;
+	}
+
 	.adress1{
 		width: auto;
 	}
 
-	.adress1 img{
-		width: 30%;
+	.foto-footer{
+		width: 19%;
 	}
 
 	.rua{
@@ -1026,6 +1062,17 @@ footer address:last-child {
 		width: auto;
 		text-align: left;
 		float: left;
+	}
+
+	.facebook{
+		width: 13%;
+		padding: 0%;
+		margin-left: 20px;
+	}
+
+	.linkedin{
+		width: 13%;
+		padding: 0%;
 	}
 
 	.tel{
