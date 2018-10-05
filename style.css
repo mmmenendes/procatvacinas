@@ -794,6 +794,7 @@ footer address:last-child {
 	    margin-top: 31px;
 	}
 
+
 	.clinicas h2{
 		width: 90%;
     	margin-left: 5%;
@@ -817,9 +818,11 @@ footer address:last-child {
 		margin-right: 22%;
 	}
 
-	.information > img{
+	.information img{
 		width: 43px;
-		margin-right: 13px;
+		float: left;
+	    margin-left: 23px;
+	    margin-top: -7px;
 	}
 
 	.information{
@@ -1021,7 +1024,7 @@ footer address:last-child {
 
 	.h1-left-historia{
 		width: 83%;
-    	margin-top: -64px;
+    	margin-top: 46px;
 	}
 
 	.historia img{
@@ -1032,7 +1035,7 @@ footer address:last-child {
 	}
 
 	.historia p {
-	    margin-top: 35px;
+	    margin-top: 60px;
 	    font-size: 1.1em;
 	    width: 100%;
 	    text-align: justify;
