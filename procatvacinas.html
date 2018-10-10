@@ -41,7 +41,11 @@
 				$('#oque').css('width', containerWidth + 'px')
 				$('#beneficios').css('width', containerWidth + 'px')
 				$('#vacinas2').css('width', containerWidth + 'px')
+				$('#conforto').css('width', containerWidth + 'px')
+				$('#praticidade').css('width', containerWidth + 'px')
+				$('#profissionalismo').css('width', containerWidth + 'px')
 				$('.clinicas').attr("align","center");
+
 			}else{
 				$(window).scroll(function () {
 					var logoAltura = $('.logo').css('height')
@@ -55,6 +59,19 @@
 				$('#oque1').removeClass('collapse');
 				$('#beneficios1').removeClass('collapse');
 				$('#vacinas1').removeClass('collapse');
+
+				$('#conforto1').removeClass('collapse');
+				$('#praticidade1').removeClass('collapse');
+				$('#profissionalismo1').removeClass('collapse');
+
+				$('#oque-col').removeAttr('data-toggle');
+				$('#beneficios-col').removeAttr('data-toggle');
+				$('#vacinas2-col').removeAttr('data-toggle');		
+
+				$('#conforto-col').removeAttr('data-toggle');
+				$('#praticidade-col').removeAttr('data-toggle');
+				$('#profissionalismo-col').removeAttr('data-toggle');
+
 			}
 
 			sideMenuButtons($("#menu-toggle"), $("#wrapper"))
@@ -158,7 +175,7 @@
 
 				<div class="blocos">
 					<div class="row blocos3">
-						<div class="col-sm" align="justify" data-toggle="collapse" data-target="#oque1">
+						<div id="oque-col" class="col-sm" align="justify" data-toggle="collapse" data-target="#oque1">
 							<h2 id="oque">o que é?</h2>	
 							<p id="oque1" class="collapse">Na campanha de vacinação corporativa, faz-se o atendimento in loco dos colaboradores que desejam tomar a vacina. 
 								A PROCAT Vacinas desloca uma equipe de enfermagem e todos os materiais necessários para a realização da campanha, evitando que haja a necessidade de deslocamento para fora da empresa.
@@ -166,14 +183,14 @@
 							</p>
 						</div>
 
-						<div class="col-sm" align="justify" data-toggle="collapse" data-target="#beneficios1">
+						<div id="beneficios-col" class="col-sm" align="justify" data-toggle="collapse" data-target="#beneficios1">
 							<h2 id="beneficios">benefícios</h2>	
 							<p id="beneficios1" class="collapse">Algumas vantagens da campanha de vacinação corporativa são a redução do absenteísmo; o combate ao presenteísmo; a diminuição na frequência de visitas médicas; favorecendo a negociação com as operadoras dos planos de saúde corporativos e, não menos importante, oferecer aos funcionários e seus dependentes um benefício tangível no que se refere a promoção da saúde do trabalhador.
 							</p>
 						</div>
 
 						<!--data-toggle="collapse" data-target="#vacinas1" EFEITO TOGGLE e COLLAPSE class="collapse"-->
-						<div class="col-sm" align="justify" data-toggle="collapse" data-target="#vacinas1">
+						<div id="vacinas2-col" class="col-sm" align="justify" data-toggle="collapse" data-target="#vacinas1">
 							<h2 id="vacinas2">vacinas</h2>	
 							<p id="vacinas1" class="collapse">Trabalhamos com todo o portfólio de vacinas liberadas pela ANVISA, de todos os laboratórios.
 								A campanha contra a gripe é de abrangência nacional, com o início sujeito à chegada da vacina.
@@ -194,14 +211,14 @@
 									<input type="text" id="formSCNome" class="form-control validate" placeholder="Nome">
 								</div>
 
-								<div id="moda-email" class="md-form">
+								<div id="moda-cargo" class="md-form">
 									<i class="fa fa-envelope prefix grey-text"></i>
-									<input type="email" id="formSCEmail" class="form-control validate"  placeholder="Cargo">
+									<input type="text" id="formSCCargo" class="form-control validate"  placeholder="Cargo">
 								</div>
 
-								<div id="moda-endereco" class="md-form">
+								<div id="moda-email" class="md-form">
 									<i class="fa fa-pencil prefix grey-text"></i>
-									<input type="text" id="formSCEndereco" class="form-control validate" placeholder="E-mail">
+									<input type="text" id="formSCEmail" class="form-control validate" placeholder="E-mail">
 								</div>
 
 								<div id="moda-telefone" class="md-form">
@@ -311,32 +328,17 @@
 			</div>
 
 			<div class="information">
-				<div class="tel-info col-sm">
-					<div>
-						<img src="img/icon/tel.png">
-					</div>
-					<div>
-						<p>(11) 3864.2246</p>
-					</div>
+				<img src="img/icon/tel.png">
+				<div>
+					<p id="tel-info">(11) 3864.2246</p>
 				</div>
-
-				<div class="info-rua col-sm">
-					<div>
-						<img src="img/icon/location.png">
-					</div>
-					<div>
-						<p>Rua Heitor Penteado, 477 Sumaré, São Paulo - SP</p>
-					</div>
+				<img src="img/icon/location.png">
+				<div>
+					<p id="info-rua">Rua Heitor Penteado, 477 Sumaré, São Paulo - SP</p>
 				</div>
-
-				<div class="info-atendimento col-sm">
-					<div>
-						<img src="img/icon/atendimento.png">
-					</div>
-					<div>
-						<p>Atendimento: Segunda a sexta, das 8h00 às 18h30
-						Sábado, das 8h00 às 11h30</p>
-					</div>
+				<img src="img/icon/atendimento.png">
+				<div>
+					<p id="info-atendimento">Atendimento: Segunda à sexta, dàs 8h00 às 18h30 Sábado, dàs 8h00 às 11h30</p>
 				</div>
 			</div>
 
@@ -370,22 +372,22 @@
 					<div class="home-txt"-->
 						<div class="blocos">
 							<div class="row blocos3">
-								<div class="col-sm">
-									<h2>Conforto</h2>	
-									<p> Levamos o serviço de vacinação para dentro da sua casa. Assim, evita-se o deslocamento do paciente até uma clínica ou hospital, o que pode ser um inconveniente nos casos de crianças pequenas, idosos, pessoas com dificuldade de deslocamento e mesmo quem não tem tempo.
+								<div id="conforto-col" class="col-sm" align="justify" data-toggle="collapse" data-target="#conforto1">
+									<h2 id="conforto">Conforto</h2>	
+									<p id="conforto1" class="collapse"> Levamos o serviço de vacinação para dentro da sua casa. Assim, evita-se o deslocamento do paciente até uma clínica ou hospital, o que pode ser um inconveniente nos casos de crianças pequenas, idosos, pessoas com dificuldade de deslocamento e mesmo quem não tem tempo.
 									</p>
 								</div>
 
-								<div class="col-sm" >
-									<h2>Praticidade</h2>	
-									<p> Agende o seu atendimento de acordo com a sua conveniência. Atendemos em horário comercial de segunda a sexta e sábado pela manhã, em toda Grande São Paulo. Entre em contato usando o formulário abaixo, e-mail, telefone e Whatsapp.
+								<div id="praticidade-col" class="col-sm" align="justify" data-toggle="collapse" data-target="#praticidade1">
+									<h2 id="praticidade">Praticidade</h2>	
+									<p id="praticidade1" class="collapse"> Agende o seu atendimento de acordo com a sua conveniência. Atendemos em horário comercial de segunda a sexta e sábado pela manhã, em toda Grande São Paulo. Entre em contato usando o formulário abaixo, e-mail, telefone e Whatsapp.
 									</p>
 								</div>
 
 								<!--data-toggle="collapse" data-target="#vacinas1" EFEITO TOGGLE e COLLAPSE class="collapse"-->
-								<div class="col-sm">
-									<h2>Profissionalismo</h2>	
-									<p>A nossa equipe de enfermagem é qualificada para aplicação de todo tipo de vacina e passar todas as orientações necessárias. A enfermeira entrará em contato com o solicitante antes da visita para dar orientações e tirar dúvidas sobre o atendimento. No dia da visita, todo o material necessário para a aplicação será enviado junto com a profissional, sendo necessário somente o fornecimento de um espaço para o preparo da vacina.
+								<div id="profissionalismo-col" class="col-sm" align="justify" data-toggle="collapse" data-target="#profissionalismo1">
+									<h2 id="profissionalismo">Profissionalismo</h2>	
+									<p id="profissionalismo1" class="collapse">A nossa equipe de enfermagem é qualificada para aplicação de todo tipo de vacina e passar todas as orientações necessárias. A enfermeira entrará em contato com o solicitante antes da visita para dar orientações e tirar dúvidas sobre o atendimento. No dia da visita, todo o material necessário para a aplicação será enviado junto com a profissional, sendo necessário somente o fornecimento de um espaço para o preparo da vacina.
 									</p>
 								</div>
 							</div>
@@ -547,7 +549,9 @@
 					<img class="hist-img" src="img/icon/hist.png">
 				</div>
 
-				<hr style="height:1px; border:none; color:#FFFFFF; background-color:#FFFFFF; margin-top: 0px; margin-bottom: 0px;"/>
+				<div class="container">
+					<hr style="height:1px; border:none; color:#FFFFFF; background-color:#FFFFFF; margin-top: 0px; margin-bottom: 0px;"/>
+				</div>
 				<br>
 				<br>
 
