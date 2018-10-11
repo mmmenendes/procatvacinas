@@ -1,0 +1,264 @@
+#modal-h{
+  padding: 0px;
+  margin: 0px;
+}
+
+#modal-form{
+  background: none;
+    color: white;
+  width: 168%;
+  box-shadow: none;
+  border: none;
+}
+
+#modal-title1{
+    font-size: 2.0em;
+}
+
+#modal-form input{
+  padding: 2.375rem 1.75rem;
+  font-size: 1.5em;
+}
+
+#modal-form textarea{
+  font-size: 1.2em;
+}
+    
+#modal-dialog{
+  margin-left: 19%;
+  margin-right: 0px;
+  margin-top: 4%;
+}
+
+#moda-cargo{
+  width: 29%;
+  float: left;
+}
+
+#moda-empresa{
+  width: 69%;
+  float: right;
+}
+
+#moda-telefone{
+  width: 39%;
+  float: left;
+}
+
+#moda-email{
+  width: 59%;
+  float: right;
+}
+
+#moda-vacina{
+  width: 79%;
+  float: left;
+}
+
+#moda-quantidade{
+  width: 19%;
+  float: right;
+}
+
+#button-form11{
+  background: #034164;
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+}
+
+#button-cancel11{
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+}
+
+.md-form{
+  margin-bottom: 20px;
+}
+
+#modalContactForm2{
+  width: 100%;
+}
+
+#modal-form2{
+  background: none;
+    color: white;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    margin-top: 85px;
+    margin-left: -14px;
+}
+
+#modal2-title1{
+  font-size: 2.0em;
+}
+  
+#dialog2{
+  margin: 0px;
+    margin-left: 32%;
+}
+
+#modal-form2 input{
+  padding: 2.375rem 1.75rem;
+  font-size: 1.5em;
+}
+
+#modal-form2 textarea{
+  font-size: 1.5em;
+}
+
+#button-form2{
+  background: #034164;
+    border: none;
+    padding: 2.5rem 4rem;
+    font-size: 2.0rem;
+    line-height: 0.5;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+}
+
+#button-form21{
+  background: #034164;
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+}
+
+#button-cancel21{
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 960px) {
+  #modal-form {
+      background: none;
+      color: white;
+      width: 95%;
+      box-shadow: none;
+      border: none;
+  }
+
+  #modal-form input{
+    padding: 1.375rem 0.75rem;
+    font-size: 1.2em;
+  } 
+
+  #modal-title1{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  #modal-dialog {
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  #modal-h{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #moda-nome{
+    width: 100%;
+    float: left;
+  }
+
+  #moda-cargo{
+    width: 100%;
+    float: left;
+  }
+
+  #moda-empresa{
+    width: 100%;
+    float: left;
+  }
+
+  #moda-telefone{
+    width: 100%;
+    float: left;
+  }
+
+  #moda-email{
+    width: 100%;
+    float: left;
+  }
+
+  #moda-endereco{
+    width: 100%;
+    float: left;
+  }
+
+  #moda-quantidade{
+    width: 100%;
+    float: left;
+  }
+
+  #moda-vacina{
+    width: 100%;
+    float: left;
+  }
+
+  .md-form{
+    margin-bottom: 15px;
+  }
+
+  #button-form2 {
+    padding: 2.0rem 2.5rem;
+      margin-top: 0px;
+  }
+
+  .modal-title{
+    font-size: 2.2em;
+  }
+
+  #moda-nome{
+    font-size: 2rem;
+  }
+
+  .modal-body{
+    /* position: relative; */
+      -ms-flex: 1 1 auto;
+      flex: 6 4 auto;
+      padding-right: 5rem;
+      /* padding-left: 52px; */
+      width: 100%;
+  }
+
+  #modal2-title1{
+    font-size: 1.5em;
+  }
+
+  #modal-form2{
+    background: none;
+    color: white;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    margin-top: 40px;
+    margin-left: -65px;
+  }
+
+  #modal-form2 input{
+    padding: 1.375rem 0.75rem;
+    font-size: 1.2em;
+  }
+
+  #button-form11{
+    padding: 1.0rem;
+  }
+
+  #button-cancel11{
+    padding: 1.0rem;
+  }
+
+  #button-form21{
+    padding: 1.0rem;
+  }
+
+  #button-cancel21{
+    padding: 1.0rem;
+  }
+}

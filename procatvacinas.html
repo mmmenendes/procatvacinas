@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="style-menu.css">
+		<link rel="stylesheet" type="text/css" href="style-modal.css">
 		<title> PROCATVACINAS </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
@@ -203,10 +204,10 @@
 				<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div id="modal-dialog" class="modal-dialog" role="document">
 						<div id="modal-form" class="modal-content">
-							<div class="modal-body mx-3">
+							<div class="modal-body mx-3" align="center">
 								<h4 id="modal-title1" class="modal-title w-100 font-weight-bold">solicitar cotação</h4>
 
-								<div id="moda-nome" class="md-form">
+								<div class="md-form">
 									<i class="fa fa-user prefix grey-text"></i>
 									<input type="text" id="formSCNome" class="form-control validate" placeholder="Nome">
 								</div>
@@ -216,34 +217,34 @@
 									<input type="text" id="formSCCargo" class="form-control validate"  placeholder="Cargo">
 								</div>
 
+								<div id="moda-empresa" class="md-form">
+									<i class="fa fa-pencil prefix grey-text"></i>
+									<input type="text" id="formSCEmpresa" class="form-control validate" placeholder="Empresa">
+								</div>
+
+								<div id="moda-telefone" class="md-form">
+									<i class="fa fa-tag prefix grey-text"></i>
+									<input type="text" id="formSCTelefone" class="form-control validate" placeholder="Telefone">								
+								</div>
+
 								<div id="moda-email" class="md-form">
 									<i class="fa fa-pencil prefix grey-text"></i>
 									<input type="text" id="formSCEmail" class="form-control validate" placeholder="E-mail">
 								</div>
 
-								<div id="moda-telefone" class="md-form">
-									<i class="fa fa-tag prefix grey-text"></i>
-									<input type="text" id="formSCTelefone" class="form-control validate" placeholder="Telefone">									
-								</div>
-
-								<div id="moda-qtd" class="md-form">
-									<i class="fa fa-pencil prefix grey-text"></i>
-									<input type="text" id="formSCQTD" class="form-control validate" placeholder="Empresa">
-								</div>
-
-								<div id="moda-empresa" class="md-form">
-									<i class="fa fa-pencil prefix grey-text"></i>
-									<input type="text" id="formSCEmpresa" class="form-control validate" placeholder="Endereço">
-								</div>
-
 								<div class="md-form">
+									<i class="fa fa-pencil prefix grey-text"></i>
+									<input type="text" id="formSCEndereco" class="form-control validate" placeholder="Endereço">
+								</div>
+
+								<div id="moda-vacina" class="md-form">
 									<i class="fa fa-pencil prefix grey-text"></i>
 									<input type="text" id="formSCVacina" class="form-control validate" placeholder="Vacina">
 								</div>
 
-								<div class="md-form">
+								<div id="moda-quantidade" class="md-form">
 									<i class="fa fa-pencil prefix grey-text"></i>
-									<input type="text" id="formSCVacina" class="form-control validate" placeholder="Quantidade">
+									<input type="text" id="formSCQTD" class="form-control validate" placeholder="Quantid.">
 								</div>
 
 								<div align="center">
@@ -378,16 +379,15 @@
 									</p>
 								</div>
 
-								<div id="praticidade-col" class="col-sm" align="justify" data-toggle="collapse" data-target="#praticidade1">
-									<h2 id="praticidade">Praticidade</h2>	
-									<p id="praticidade1" class="collapse"> Agende o seu atendimento de acordo com a sua conveniência. Atendemos em horário comercial de segunda a sexta e sábado pela manhã, em toda Grande São Paulo. Entre em contato usando o formulário abaixo, e-mail, telefone e Whatsapp.
-									</p>
-								</div>
-
-								<!--data-toggle="collapse" data-target="#vacinas1" EFEITO TOGGLE e COLLAPSE class="collapse"-->
 								<div id="profissionalismo-col" class="col-sm" align="justify" data-toggle="collapse" data-target="#profissionalismo1">
 									<h2 id="profissionalismo">Profissionalismo</h2>	
 									<p id="profissionalismo1" class="collapse">A nossa equipe de enfermagem é qualificada para aplicação de todo tipo de vacina e passar todas as orientações necessárias. A enfermeira entrará em contato com o solicitante antes da visita para dar orientações e tirar dúvidas sobre o atendimento. No dia da visita, todo o material necessário para a aplicação será enviado junto com a profissional, sendo necessário somente o fornecimento de um espaço para o preparo da vacina.
+									</p>
+								</div>
+
+								<div id="praticidade-col" class="col-sm" align="justify" data-toggle="collapse" data-target="#praticidade1">
+									<h2 id="praticidade">Praticidade</h2>	
+									<p id="praticidade1" class="collapse"> Agende o seu atendimento de acordo com a sua conveniência. Atendemos em horário comercial de segunda a sexta e sábado pela manhã, em toda Grande São Paulo. Entre em contato usando o formulário abaixo, e-mail, telefone e Whatsapp.
 									</p>
 								</div>
 							</div>
@@ -398,7 +398,7 @@
 						<div class="formulario">
 							<div class="modal fade" id="modalContactForm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							    <div id="dialog2" class="modal-dialog" role="document">
-							        <div id="modal-form2" class="modal-content">
+							        <div id="modal-form2" class="modal-content" align="center">
 							            <h4 id="modal2-title1" class="modal-title w-100 font-weight-bold">formulário</h4>
 
 							            <div class="modal-body mx-3">
@@ -598,6 +598,7 @@
 				<p>Desenvolvido por Ideas Tree copyright 2018. Todos os direitos reservados</p>
 			</div>
 		</footer>
+		<div id="loading"></div>
 	</body>
 
 	<script>
@@ -627,27 +628,62 @@
 			})
 
 			$("#button-form11").click(function(e) {
-				var param = {
-					"to" : "mmmenendes@gmail.com",
-					"email" : $("#formSCEmail").val(),
-					"name" : $("#formSCNome").val(),
-					"subject": "(" + $("#formSCEmpresa").val() + "): Cotação de vacinas",
-					"message_html": "A empresa " + $("#formSCEmpresa").val() + " solicita orçamento para a vacina " + $("#formSCVacina").val() + " sendo " + $("#formSCQTD").val() + " unidades a serem entregues no endereço " + $("#formSCEndereco").val() + " e o tefone para contato é " + $("#formSCTelefone").val() + "."   
+
+				if($("#formSCNome").val() == null || $("#formSCNome").val() == "" ||
+					$("#formSCCargo").val() == null || $("#formSCCargo").val() == "" ||
+					$("#formSCEmpresa").val() == null || $("#formSCEmpresa").val() == "" ||
+					$("#formSCEmail").val() == null || $("#formSCEmail").val() == "" ||
+					$("#formSCTelefone").val() == null || $("#formSCTelefone").val() == "" ||
+					$("#formSCEndereco").val() == null || $("#formSCEndereco").val() == "" ||
+					$("#formSCVacina").val() == null || $("#formSCVacina").val() == "" ||
+					$("#formSCQTD").val() == null || $("#formSCQTD").val() == ""){
+					alert("Dados incompletos");
+				}else{
+					var param = {
+						"to" : "paulo.filho@procatvacinas.com.br",
+						"email" : $("#formSCEmail").val(),
+						"name" : $("#formSCNome").val(),
+						"subject": "(" + $("#formSCEmpresa").val() + "): Cotação de vacinas",
+						"message_html": $("#formSCNome").val() + " " + $("#formSCCargo").val() + " representante da empresa " + $("#formSCEmpresa").val() + " solicita orçamento para a vacina " + $("#formSCVacina").val() + " sendo " + $("#formSCQTD").val() + " unidades a serem entregues no endereço " + $("#formSCEndereco").val() + " e o tefone para contato é " + $("#formSCTelefone").val() + "."   
+					}
+					
+					sendEmail(param)
+					$("#loading").addClass("se-pre-con");
+					$(window).load(function() {
+						$(".se-pre-con").fadeOut("slow");;
+					});
+
+					setTimeout(function(){
+						window.location.reload();
+					}, 3000);
 				}
-				
-				sendEmail(param)
 			})
 
 			$("#button-form21").click(function(e) {
-				var param = {
-					"to" : "mmmenendes@gmail.com",
-					"email" : $("#formSCHEmail").val(),
-					"name" : $("#formSCHNome").val(),
-					"subject": "(" + $("#formSCHNome").val() + "): Cotação de homecare -> " + $("#formSCHAssunto").val(),
-					"message_html": $("#formSCHMsg").val()
+				if($("#formSCHNome").val() == null || $("#formSCHNome").val() == "" ||
+					$("#formSCHEmail").val() == null || $("#formSCHEmail").val() == "" ||
+					$("#formSCHAssunto").val() == null || $("#formSCHAssunto").val() == "" ||
+					$("#formSCHMsg").val() == null || $("#formSCHMsg").val() == ""){
+					alert("Dados incompletos");
+				}else{
+					var param = {
+						"to" : "paulo.filho@procatvacinas.com.br",
+						"email" : $("#formSCHEmail").val(),
+						"name" : $("#formSCHNome").val(),
+						"subject": "(" + $("#formSCHNome").val() + "): Cotação de homecare -> " + $("#formSCHAssunto").val(),
+						"message_html": $("#formSCHMsg").val()
+					}
+					
+					sendEmail(param)
+					$("#loading").addClass("se-pre-con");
+					$(window).load(function() {
+						$(".se-pre-con").fadeOut("slow");;
+					});
+
+					setTimeout(function(){
+						window.location.reload();
+					}, 3000);
 				}
-				
-				sendEmail(param)
 			})
 
 			$("#button-cancel11").click(function(e) {

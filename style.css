@@ -38,103 +38,6 @@ label {
     margin-top: 5px;
 }
 
-#modal-h{
-	padding: 0px;
-	margin: 0px;
-}
-
-#modal-form{
-	background: none;
-    color: white;
-	width: 168%;
-	box-shadow: none;
-	border: none;
-}
-
-#modal-title1{
-    font-size: 1.4em;
-}
-
-#modal-form input{
-	font-size: 1.2em;
-}
-
-#modal-form textarea{
-	font-size: 1.2em;
-}
-    
-#modal-dialog{
-	margin-left: 19%;
-	margin-right: 0px;
-	margin-top: 7%;
-}
-
-#moda-nome{
-	width: 38%;
-	float: left;
-}
-
-#moda-email{
-	width: 58%;
-	float: right;
-}
-
-#moda-endereco{
-	width: 78%;
-	float: left;
-}
-
-#moda-telefone{
-	width: 18%;
-	float: right;
-}
-
-#moda-qtd{
-	width: 18%;
-	float: left;
-}
-
-#moda-empresa{
-	width: 78%;
-	float: right;
-}
-
-#button-form11{
-	background: #034164;
-    border: none;
-    padding: 1.5rem 2rem;
-    font-size: 1.8rem;
-}
-
-#button-cancel11{
-    border: none;
-    padding: 1.5rem 2rem;
-    font-size: 1.8rem;
-}
-
-.md-form{
-	margin-bottom: 20px;
-}
-
-/*
-.modal-dialog {
-    width: 600px;
-
-/*ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-m5argin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}*/
-/*
-article, aside, footer, header, hgroup, main, nav, section {
-    display: block;
-}
-*/
-
 .h1-left{
 	float : left;
 	width: 54%;
@@ -405,61 +308,6 @@ article, aside, footer, header, hgroup, main, nav, section {
 	text-align: justify;
 }
 
-#modalContactForm2{
-	width: 100%;
-}
-
-#modal-form2{
-	background: none;
-    color: white;
-    width: 100%;
-    box-shadow: none;
-    border: none;
-    margin-top: 85px;
-    margin-left: -14px;
-}
-
-#modal2-title1{
-	margin-left: 4%;
-    font-size: 1.4em;
-}
-	
-#dialog2{
-	margin: 0px;
-    margin-left: 32%;
-}
-
-#modal-form2 input{
-	font-size: 1.2em;
-}
-
-#modal-form2 textarea{
-	font-size: 1.2em;
-}
-
-#button-form2{
-	background: #034164;
-    border: none;
-    padding: 2.5rem 4rem;
-    font-size: 2.0rem;
-    line-height: 0.5;
-    border-radius: 0.3rem;
-    text-transform: uppercase;
-}
-
-#button-form21{
-	background: #034164;
-    border: none;
-    padding: 1.5rem 2rem;
-    font-size: 1.8rem;
-}
-
-#button-cancel21{
-    border: none;
-    padding: 1.5rem 2rem;
-    font-size: 1.8rem;
-}
-
 .text-table{
     text-indent: inherit;
     text-transform: initial;
@@ -508,18 +356,6 @@ article, aside, footer, header, hgroup, main, nav, section {
     padding-top: 100px;
 }
 
-/*.historia img{
-	float: left;
-	text-decoration: none;
-	float: left;
-	max-width: 100%;
-    height: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}*/
-
 .historia p{
     width: 100%;
     margin-top: 33px;
@@ -547,16 +383,6 @@ article, aside, footer, header, hgroup, main, nav, section {
     width: 45%;
     margin-top: -100px;
 }
-
-/*.h1-left-hist{
-	float : left;
-	width: 30%;
-}
-
-.fachada{
-    width: 100%;
-}*/
-
 
 .hist-img {
     width: 65px;
@@ -629,15 +455,7 @@ footer address:last-child {
 	width: 30%;
 }
 
-
-
-
-
 @media screen and (max-width: 960px) {
-	footer{
-		margin-top: 10px;
-	}
-
 	.img{
 		margin-bottom: 30px
 	}
@@ -678,10 +496,6 @@ footer address:last-child {
 
 	.campanha > .img-right {
 	    width: 20%;
-	}
-
-	.blocos{
-
 	}
 
 	.blocos3 p{
@@ -756,7 +570,6 @@ footer address:last-child {
 	.clientesSlides img{
 		height: 100px;
 	}
-
 
 	.clinicas{
 		background-image: url(img/hands-mini.jpg);
@@ -851,41 +664,6 @@ footer address:last-child {
     	margin-left: 78px;
 	}
 
-	/*.tel-info p{
-		width: 78%;
-	    font-size: 1.34em;
-	    text-align: center;
-	    margin-top: -34px;
-	    float: right;
-	}
-
-	.info-rua{
-		margin-top: 21%;
-    	margin-bottom: 35%;
-	}
-
-	.info-rua p{
-		max-width: 100%;
-	    font-size: 1.3em;
-	    text-align: center;
-	    width: 90%;
-	    margin-top: -14%;
-	    float: right;
-	}
-
-	.info-atendimento{
-		margin-top: -23%;
-    	width: 51%;
-	}
-
-	.info-atendimento p{
-		margin-top: -48px;
-	    font-size: 1.4rem;
-	    text-align: -webkit-center;
-	    width: 179%;
-	    margin-left: 36px;
-	}*/
-
 	#homecare{
 		margin-top: 9%;
 	}
@@ -925,100 +703,11 @@ footer address:last-child {
     	margin-top: -69px;
 	}
 
-	#modal-form {
-	    background: none;
-	    color: white;
-	    width: 95%;
-	    box-shadow: none;
-	    border: none;
-	}
-
-	#modal-dialog {
-	    margin-left: 0;
-	    margin-right: 0;
-	}
-
-	#modal-h{
-		padding: 0px;
-		margin: 0px;
-	}
-
-	#moda-nome{
-		width: 100%;
-		float: left;
-	}
-
-	#moda-email{
-		width: 100%;
-		float: right;
-	}
-
-	#moda-endereco{
-		width: 100%;
-		float: left;
-	}
-
-	#moda-telefone{
-		width: 100%;
-		float: right;
-	}
-
-	#moda-qtd{
-		width: 100%;
-		float: left;
-	}
-
-	#moda-empresa{
-		width: 100%;
-		float: right;
-	}
-
 	.btn{
 		padding: 0.375rem 0.75rem;
 	    font-size: 2rem;
 	    line-height: 1.5;
 	    border-radius: 0.25rem;
-	}
-
-	.md-form{
-		margin-bottom: 20px;
-	}
-
-	#button-form2 {
-		padding: 2.0rem 2.5rem;
-	    margin-top: 0px;
-	}
-
-	.modal-title{
-		font-size: 2.2em;
-	}
-
-	#moda-nome{
-		font-size: 2rem;
-	}
-
-	.modal-body{
-		/* position: relative; */
-	    -ms-flex: 1 1 auto;
-	    flex: 6 4 auto;
-	    padding-right: 5rem;
-	    /* padding-left: 52px; */
-	    width: 100%;
-	}
-
-	#modal-form2{
-		background: none;
-	    color: white;
-	    width: 100%;
-	    box-shadow: none;
-	    border: none;
-	    margin-top: 40px;
-	    margin-left: -65px;
-	}
-
-	#modal2-title1 {
-	    margin-left: 11%;
-	    font-size: 2.4em;
 	}
 
 	#vacinas h1 {
@@ -1107,4 +796,20 @@ footer address:last-child {
 	    font-size: 0.9em;
 	    margin-bottom: 0px;
 	}
+}
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	opacity: 0.8;
+	background: url(img/loader-64x/Preloader_2.gif) center no-repeat #fff;
 }
